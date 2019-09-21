@@ -4,6 +4,8 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
+var _Layout = _interopRequireDefault(require("src/lib/Layout.js"));
+
 var _jquery = _interopRequireWildcard(require("jquery"));
 
 require("src/components/layouts/03layout02/03layout02.css");
@@ -20,30 +22,6 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var cadenaweblatoutsstring = _react["default"].createElement("div", null, _react["default"].createElement("header", null, _react["default"].createElement("div", {
-  className: "logo"
-}), _react["default"].createElement("h1", {
-  className: "title-application"
-}, "My Application")), _react["default"].createElement("div", {
-  className: "main-body"
-}, _react["default"].createElement("aside", {
-  id: "menuvertical",
-  className: "menu-area"
-}), _react["default"].createElement("div", {
-  id: "root",
-  className: "wrapper page root"
-}, _react["default"].createElement("div", {
-  className: "nav"
-}, _react["default"].createElement("nav", {
-  "data-behavior": "navButtons03layout02"
-})), _react["default"].createElement("div", {
-  className: "main"
-}, _react["default"].createElement("main", null, _react["default"].createElement("div", {
-  className: "content",
-  "data-template": "scroll02",
-  "data-action": "panelform01"
-}))), _react["default"].createElement("div", {
-  className: "footer"
-}, _react["default"].createElement("footer", null)))));
+var cadenaweblatoutsstring = _react["default"].createElement(_Layout["default"], null);
 
 _reactDom["default"].render(cadenaweblatoutsstring, document.querySelector(".container .pages")); //console.dir($)
