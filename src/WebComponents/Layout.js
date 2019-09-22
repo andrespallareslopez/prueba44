@@ -1,8 +1,14 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import MyNav from 'src/lib/MyNav.js'
+import MyMenuVertical from 'src/lib/MyMenuVertical.js'
+import MyTab from 'src/lib/MyTab.js'
+
 import 'src/components/layouts/03layout02/03layout02.css'
-var Layout =()=>{
+import 'src/components/layouts/03layout02/03transition02.css'
+import 'src/components/effects/03rippleEffects01.css'
+
+
+const Layout =()=>{
     return (
         <div>
         <header>
@@ -13,7 +19,7 @@ var Layout =()=>{
         </header>
         <div className="main-body">
             <aside id="menuvertical" className="menu-area">
-              
+              <MyMenuVertical id="MenuVertical01" ></MyMenuVertical>
             </aside>
             <div id="root" className="wrapper page root">
         
@@ -29,7 +35,7 @@ var Layout =()=>{
                 <div className="main">
                     <main>
                         <div className="content" data-template="scroll02" data-action="panelform01" >
-                       
+                          <MyTab></MyTab>
                     
         
                         </div>
@@ -43,7 +49,7 @@ var Layout =()=>{
             </div>
           </div>
         </div> 
-
+    
     )
 }
 

@@ -1,4 +1,5 @@
-import {render,html} from '/../node_modules/lit-html/lit-html.js'
+import React from 'react'
+import ReactDOM from 'react-dom'
 import {util} from './util01.js';
 import {components} from './components01.js';
 
@@ -68,13 +69,14 @@ var controls;
             this.initevent(options)
         }
         */
+        
 
      }
      ns.UXSlidePanels.prototype.eventSlidePanels=function(){
         var self=this
         
         //var result=self.options.data;
-        //console.log("estoy dentro de initvent de slidePanels");
+        console.log("estoy dentro de initvent de slidePanels");
         //console.dir(self.options);
         calcularslides.apply(self,[]);//en calcularslides el ul se oculta y al final de la 
                                       //funcion se vuelve a poner a visible
@@ -114,81 +116,33 @@ var controls;
      ns.UXSlidePanels.prototype.setDate = function(data){
            
      }
+     
      ns.UXSlidePanels.prototype.render = function(result,state){
        var self=this
        //console.log("Estoy en render de UXSlidePanels")
        //console.dir(self.options)
-       self.datatemplate=undefined;
-       self.dataResult=undefined;  //definimos esta nueva variable para esta clase
+     
        //console.dir(result);
        if (result){
            self.options.data=result;
        }        
        calcularmedidas.apply(self,[]);
        
-       self.dataResult={
-           elementos:self.data,
-           sizes:self.sizes
-       };  //este tipo de optios.data,mas tarde se lo pasamos a options.datatemplate
-          //para que el render de esta clase, que esta definido mas adelante, en esta misma clase,
-          //lo procese y lo pase a datatemplate, 
-          // este options.data es diferente de los demas porque el objeto 'sizes'
-          //lo vamos a utilizar en handlebar en la plantilla slide03 o templateslidepanels.
-          //console.dir(sizes);  
-       
-       
-        
-       if (self.dataResult){
-         //console.log("estoy dentro de render de slidePanels")
-         //this.options.datatemplate=this.options.fetchRemote;
-         
-         self.options.datatemplate = self.dataResult;
-         
-       }
-       /*
-       var template=(self) => html `
-       <ul class="slide-container-items">
-           ${
-               self.sizes.pages.map(function(page){     
-               return  html`
-               <li class="slide-item" >
-                   <div class="list-grp-buttons list-center">
-                   ${
-                       page.slides.map(function(slide){                                 
-                       //console.dir(slide);
-                       return html`
-                           <a class="list-grp-button box-shadow-3"   data-codigo=${slide.codigo} href="#"  >
-                               <div class="list-grp-content-top" >
-                               <span class="list-grp-content-text list-grp-context-text-center" >${slide.categoria}</span>
-                               </div>  
-                           </a>
-                       `  
-                       })
-                   }
-                   </div>
-               </li>
-               `
-               })
-           } 
-       </ul>
-       `
-       */
-       //console.dir(self)
-       //var result = template(self)
        console.dir(self.options)
        if (self.options.textTemplate){
            console.log("estoy dentro de textTemplate")
            var result = self.options.textTemplate(self)
-       }
-       //console.dir(result)
-       //console.dir($(self.options.container))
-       render(result , $(self.options.container)[0])
+         ReactDOM.render(result, $(self.options.container)[0]);
+        }
+      
        self.initevent()
     }
-     
-     ns.UXSlidePanels.prototype.getSizes = function(){
+           
+     ns.UXSlidePanels.prototype.getSizes = function(data){
         var self=this
+        self.options.data=data
         calcularmedidas.apply(self,[])
+
         return self.sizes 
      }
      

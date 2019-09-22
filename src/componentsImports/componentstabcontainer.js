@@ -56,25 +56,7 @@ var controls;
         
         createControlSelector(cntli);
         currentSelector(ii);
-        /*
-        if (ii==0)
-           $(container+" "+btnleft).css({visibility:"hidden"});
-        
-        if (cntli>0)
-           $(container+" "+btnright).css({visibility:"visible"});  
-        */   
-        //********************************************************
-        /*
-        $(container+" "+btnright).click(function(event){
-             console.log("boton izquierdo");
-             atras();
-        });
-        //*********************************************************
-        $(container+" "+btnleft).click(function(event){
-             console.log("boton derecho");
-             avance();
-        });
-        */
+    
         //********************************************************
         $(container+" "+ctrlnav).find("a").each(function(index,value){
         //var self=this;
@@ -83,26 +65,7 @@ var controls;
                  var index=event.data.index;
                  //console.dir(event)
                  ii=index;
-                 /*
-                 if ((ii-1>=0)){
-                     if (ii<cntli-1){ 
-                         $(container+" "+btnright).css({visibility:"visible"});
-                     }          
-                 }
-                 if (ii<cntli-1){
-                     if (ii-1>=0){
-                         $(container+" "+btnleft).css({visibility:"visible"})
-                     }   
-                 }
-                 if (ii==0){
-                         $(container+" "+btnleft).css({visibility:"hidden"})
-                         $(container+" "+btnright).css({visibility:"visible"});
-                 }
-                 if (ii==cntli-1){
-                         $(container+" "+btnleft).css({visibility:"visible"})
-                         $(container+" "+btnright).css({visibility:"hidden"});
-                 }
-                 */
+       
                  $(container+" " +items+" ul"+containerItems).css({transform:"translateX("+index*(-delta)+"%)"}); 
                  currentSelector(ii);
                  
