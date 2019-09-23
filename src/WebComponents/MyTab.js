@@ -2,18 +2,19 @@ import React from 'react'
 import {Tab} from '/src/componentsImports/componentstabcontainer.js'
 import MyPanelScrollContent from 'src/lib/PanelScrollContent.js'
 import MySlidePanel from 'src/lib/MySlidePanel.js'
+import MyForm from 'src/lib/MyForm.js'
 import {datos,mesas,categorias,articulos} from '/src/listInMemory.js'
 import 'src/components/tabs/tabs01.css'
 
 const MyTab = (props)=>{
-    var timer=setTimeout(()=>{
+    var timer=setTimeout( () => {
         var tabs=new Tab() 
         //var $listCategorias=$('#panelCategorias')[0]
         //console.dir($listCategorias)
         //$listCategorias.datalist=categorias
         //console.dir(categorias)
         
-    },50)
+    }, 50 )
 
     return (
        <div> 
@@ -37,7 +38,7 @@ const MyTab = (props)=>{
                             <MyPanelScrollContent id="panelArticulos" data={articulos}></MyPanelScrollContent>
                             </li>
                             <li className="tab-item" id="tabComandas" name-container="Comandas">
-                                 
+                                 <MyForm></MyForm>
                             </li>     
                           </ul>    
             

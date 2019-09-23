@@ -9,7 +9,7 @@ const MySlidePanel = (props) => {
    
     
 
-    let timer=setTimeout(()=>{
+    let timer=setTimeout( () => {
         console.dir(props)
         let slidepaneldetail = new UXSlidePanels({
             container:".slide-container .slide-items",
@@ -22,7 +22,7 @@ const MySlidePanel = (props) => {
       
         clearTimeout(timer)
         
-    },750)
+    }, 750 )
     
     return (
       <div className="slide-container">

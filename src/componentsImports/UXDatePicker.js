@@ -26,10 +26,11 @@ var controls;
     ns.UXDatePicker.prototype.init=function(){
         var self=this
         var id=self.options.id;
-        //console.log("UXDatePicker "+id)
+        console.log("UXDatePicker "+id)
         var nameCalendar=self.options.id+self.options.namepicker;
+        console.log(nameCalendar)
         var field = document.querySelector("#"+id+" "+self.options.namefield); 
-        
+        console.dir(field)
         var picker = new Pikaday({
             field: field,
             trigger: document.querySelector("#"+id+" "+self.options.namebutton),
@@ -50,7 +51,7 @@ var controls;
         picker.el.id = nameCalendar;
         picker.hide();
         //console.dir(picker.el);
-        
+        console.dir(picker)
         $("#"+id+" #btn-fecha").on("click", function (e) {
             e.preventDefault();
             
