@@ -2,6 +2,7 @@ import React from 'react'
 
 const MyInput = (props) => {
     
+    
     return (
     <div id={props.id}>
       <div className="group group-block" >

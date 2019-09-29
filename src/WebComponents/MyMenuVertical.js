@@ -18,6 +18,8 @@ const MyMenuVertical = (props) => {
         id:id,
         onClickMenu:function(e){
             console.log("estoy en click menu")
+            
+            
         }
         })
         

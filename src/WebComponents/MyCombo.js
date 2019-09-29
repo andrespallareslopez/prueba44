@@ -8,7 +8,7 @@ import 'src/components/panel/04PanelScroll01.css'
 import 'src/components/list/03datalist01.css'
 
 const MyCombo = (props) => {
-    console.dir(props.data)
+    //console.dir(props.data)
 
     let cadenadatalist = (props)=>{
         return (
@@ -46,12 +46,12 @@ const MyCombo = (props) => {
             
            textTemplate: cadenadatalist,
          onButtonClick:function(options){
-             if (id=="combo01") {
+             //if (id=="combo01") {
                 //datalist.setData({articulos:articulos},id,cadenadataarticulos)
-             }    
-             else if(id=="combo02"){
+             //}    
+             //else if(id=="combo02"){
                //datalist.setData({mesas:mesas},id,cadenadatamesas)
-             }
+            // }
                  
              scroll=new UXButtonScroll({
                  id:id+'datalist',

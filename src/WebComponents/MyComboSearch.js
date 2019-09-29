@@ -10,7 +10,7 @@ import 'src/components/list/03datalist01.css'
 
 
 const MyComboSearch = (props) => {
-     console.dir(props.data)
+     //console.dir(props.data)
     let cadenadatalist = (props)=>{
         return (
         <div className="panel-scroll" >
