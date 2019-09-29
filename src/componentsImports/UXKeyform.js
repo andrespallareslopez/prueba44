@@ -5,10 +5,15 @@ import {default as mousetrap} from 'mousetrap'
 //console.dir(mousetrap)
 
 var components
-;(function(ns){
+;(function(ns,components,$){
+    "use strict";
    
    
-})(components=components||{})
+})(controls=controls||{},components,jQuery)
 
 
-export {components}
+
+if (!window.controls)
+   window.controls={}
+   
+util.addNameSpace(window.controls,controls);

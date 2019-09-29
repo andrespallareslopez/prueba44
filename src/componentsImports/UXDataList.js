@@ -1,4 +1,6 @@
 /// <reference path="../shared/js/main.d.ts" />
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 import {util} from './util01.js';
 import {components} from './components01.js';
@@ -50,14 +52,34 @@ var controls;
 
         this.init(options)
         
-        this.eventbuttons()
-
+        //this.eventbuttons()
+        
         //Si no estubiera definida la propiedad textTemplate entonces
         //no va a iniciar el initevent desde components01.js, por tanto
         //tenemos que lanzarlo nosotros manualmente.
+        /*
         if (!this.options.textTemplate && this.initevent){
             this.initevent(options)
-         }   
+         }
+         */   
+    }
+    ns.UXDataList.prototype.initevent=function(){
+        this.eventbuttons()
+    }
+    ns.UXDataList.prototype.renderTemplate=function(props){
+        var self=this
+        if (self.options.textTemplate){
+           console.log("estoy dentro de textTemplate")
+           var result = self.options.textTemplate(props)
+         ReactDOM.render(result, $(self.options.container)[0]);
+        }
+    }
+    ns.UXDataList.prototype.render=function(){
+        var self=this
+        console.dir(self.options)
+        self.renderTemplate(self.options.data);
+        
+        self.initevent()
     }
     ns.UXDataList.prototype.eventbuttons=function(){
         var self=this

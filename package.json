@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server --port=8083",
     "build:babel": "npx babel src/index.js -w -o src/index-bis.js",
     "build:babelcomponent": "npx babel src/WebComponents -w --out-dir src/lib",
     "build:sass": "sass -w src/components/**"
@@ -31,7 +32,9 @@
   },
   "dependencies": {
     "jquery": "^1.12.1",
+    "linq": "^3.2.1",
     "moment": "^2.24.0",
+    "mousetrap": "^1.6.3",
     "pikaday": "^1.8.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",

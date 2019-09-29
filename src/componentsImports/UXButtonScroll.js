@@ -17,7 +17,7 @@ var controls;
             options.btnup=options.btnup||'#btn-slide-up'
             options.btndown=options.btndown||'#btn-slide-down'
             options.onItemClick=options.onItemClick||undefined
-            options. onClickMenu=options.onClickMenu||clickElementAccordion
+            options.onClickMenu=options.onClickMenu|| clickElementAccordion
          })(options)
          this.options={};
          util.extend(options,this.options);
@@ -309,7 +309,7 @@ var clickElementAccordion=function(){
       //hay que poner un retardo porque en el mismo momento del click
       //la altura aun no esta establecida ,importante darle mas de 100ms
       var mytimer=setTimeout(function(){
-           console.log("estoy dentro de click list-acordion");
+           console.log("estoy dentro de click UXButtonScroll");
            
            
            calcularAltura.apply(self,[]);
@@ -334,7 +334,7 @@ var clickElementAccordion=function(){
             self.doclick=false;
          }
          
-      },350);
+      },150);
     //});
 }
 })(controls=controls||{},jQuery)

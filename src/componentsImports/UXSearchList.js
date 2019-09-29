@@ -1,4 +1,5 @@
-
+import React from 'react'
+import ReactDOM from 'react-dom'
 import {util} from './util01.js';
 import {components} from './components01.js';
 import {UXDataList} from './UXDataList.js'
@@ -48,15 +49,35 @@ var controls;
         this.$inputText=undefined
         
         this.init(options)
-        this.initEventInputSearch(options)
+        //this.initEventInputSearch(options)
          //Si no estubiera definida la propiedad textTemplate entonces
         //no va a iniciar el initevent desde components01.js, por tanto
         //tenemos que lanzarlo nosotros manualmente. 
+        /*
         if (!this.options.textTemplate && this.initevent){
             this.initevent(options)
-        }   
+        }
+        */   
      }
-     ns.UXSearchList.prototype.initEventInputSearch=function(options){
+     ns.UXSearchList.prototype.renderTemplate=function(props){
+         var self=this
+         if (self.options.textTemplate){
+            console.log("estoy dentro de textTemplate")
+            var result = self.options.textTemplate(props)
+          ReactDOM.render(result, $(self.options.container)[0]);
+         }
+     }
+     ns.UXSearchList.prototype.render=function(){
+         var self=this
+         console.dir(self.options)
+         self.renderTemplate(self.options.data);
+         
+         self.initevent()
+     }
+     ns.UXSearchList.prototype.initevent=function(){
+        this.initEventInputSearch()
+     }
+     ns.UXSearchList.prototype.initEventInputSearch=function(){
         var self=this
         console.log('estoy dentro de UXSearchList initeventinputsearch')
         
@@ -65,7 +86,7 @@ var controls;
         let id=self.options.id
         let $inputText="#"+id+" "+self.options.inputText
         
-        console.dir( self.options.data)
+        //console.dir( self.options.data)
         const datos = self.options.data
          
         /*
@@ -81,24 +102,32 @@ var controls;
         })
         $($inputText).on("keyup", debounce(function (e) {
             let datoscombo
-            console.dir( self.options.data[id])
+            if (scroll!=undefined){
+                scroll.destroy();  //Esto es muy importante si hubiera alguno activo por el efecto debounce, destruirlo
+            }
+            //console.dir( self.options.data[id])
             console.log(self.$inputText.val())
             if ($($inputText).val().length>0){
                 if (self.options.onSearch){
-                    datoscombo=self.options.onSearch(datos,self.$inputText.val(),id)
+                    datoscombo = self.options.onSearch(datos,self.$inputText.val(),id)
                 }
                 self.open()
                
             }
             else{
-                datoscombo= datos
+                datoscombo= datos.data
                 self.close()
+                self.openit=false;
+                
             }
             
             if (self.opened()){
-                  
+                var props={data:datoscombo,nameField:self.options.data.nameField};
+                console.dir(props)
+                self.renderTemplate(props)
+
                  console.log("estoy dentro de opened")
-                 let timer1=setTimeout(() => {
+                 //let timer1=setTimeout(() => {
                     scroll = new UXButtonScroll({
                         id:id+'datalist',
                         onItemClick:function(value,target){
@@ -109,16 +138,16 @@ var controls;
                             scroll.destroy();
                         }
                       })
-                      clearTimeout(timer1) 
-                 }, 50);   
+                      //clearTimeout(timer1) 
+                 //}, 10);   
             }
-            else
-              scroll.destroy()
-              
-              
-            self.setData(datoscombo,self.options.id,self.options.textTemplate)
-            
-        },300))       
+            else{
+                //console.log("Estoy dentro de scroll.destroy()")
+                if (scroll!=undefined)
+                  scroll.destroy()
+            }
+             
+        },200))       
      }
      function debounce(func, wait, immediate) {
         var timeout;
@@ -136,7 +165,8 @@ var controls;
     };
 })(controls=controls||{},UXDataList,jQuery)
 
-export {controls}
+var UXSearchList=controls.UXSearchList
+export {UXSearchList}
 if (!window.controls)
    window.controls={}
    
