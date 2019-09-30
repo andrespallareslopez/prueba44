@@ -47,6 +47,9 @@ const Layout =()=>{
                     </footer>
                 </div>
             </div>
+            <div className="childLayout">
+
+            </div>
           </div>
         </div> 
     

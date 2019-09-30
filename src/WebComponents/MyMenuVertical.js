@@ -2,6 +2,10 @@ import React from 'react'
 
 import {UXScrollV} from '/src/componentsImports/UXScrollV.js'
 import {UXAccordeon} from '/src/componentsImports/UXAccordeon.js'
+import {UXLoadPanel} from 'src/componentsImports/UXLoadPanel.js'
+
+import MyPage01 from 'src/lib/MyPage01.js'
+import MyPage02 from 'src/lib/MyPage02.js'
 
 import 'src/components/menu-vertical/03Menu-vertical01/03Menu-vertical01.css';
 import 'src/components/list/03List-collections.css'
@@ -18,8 +22,37 @@ const MyMenuVertical = (props) => {
         id:id,
         onClickMenu:function(e){
             console.log("estoy en click menu")
-            
-            
+            e.preventDefault()
+            var id=$(e.target).data("panel-id")
+            var template;
+            switch(id){
+              case 'template01':
+                 template=(props)=> (
+                   <MyPage01 id={props.id}></MyPage01>
+                 )
+              break;
+              case 'template02':
+                 template=(props)=> (
+                    <MyPage02 id={props.id}></MyPage02>
+                 )
+              break;
+              case 'template03':
+                 
+              break;
+              case 'template04':
+                 
+              break;
+              case 'template05':
+                 
+              break;
+              case 'template06':
+                 
+              break;
+            }
+            new UXLoadPanel({
+              id:id,
+              textTemplate: template
+            })
         }
         })
         

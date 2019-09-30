@@ -1,115 +1,80 @@
-@font-face {
-  font-family: "Roboto";
-  src: url("../../font/Roboto/Roboto-Regular.ttf"); }
-@font-face {
-  font-family: "lcd";
-  src: url("../../font/lcd/LCDMonoWinTT/LCDMN___.ttf"); }
-@font-face {
-  font-family: "avenger";
-  src: url("../../font/avengeance/AVENGEANCE HEROIC AVENGER.ttf"); }
-.form-login-01 {
-  font-family: "Roboto";
-  position: absolute;
-  width: 98%;
-  max-width: 450px;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#673ab7+0,9575cd+100 */
-  background: #3F51B5;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #3F51B5 0%, #7986CB 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #3F51B5 0%, #7986CB 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #3F51B5 0%, #7986CB 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3F51B5', endColorstr='#7986CB',GradientType=0 );
-  /* IE6-9 */
-  top: 60px;
-  left: 50%;
-  -webkit-box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.75);
-  box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.75);
-  z-index: 999;
-  height: 265px;
-  transform: translate(-50%, -260%);
-  opacity: 0;
-  transition: all 0.3s ease-in-out; }
-  .form-login-01.open-login {
-    opacity: 1;
-    transform: translate(-50%, 0%); }
-  .form-login-01 .group {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    margin: 10px; }
-    .form-login-01 .group .label {
-      display: inline-block;
-      position: relative;
-      margin: 2px;
-      padding: 2px;
-      width: 35px;
-      max-width: 35px;
-      /*
-      top:50%;
-      transform: translateY(-50%);
-      */ }
-      .form-login-01 .group .label span {
-        margin-left: 6px;
-        margin-right: 6px; }
-        .form-login-01 .group .label span.fa {
-          color: #1A237E; }
-    .form-login-01 .group .input {
-      font-family: "Roboto";
-      display: inline-block;
-      width: calc(100% - 100px);
-      font-size: 20px;
-      color: #303F9F;
-      padding: 4px;
-      margin: 2px;
-      border: none; }
-  .form-login-01 .title {
-    font-family: "Roboto";
-    margin: 10px;
-    color: #E8EAF6; }
-  .form-login-01 .remember {
-    margin: 10px;
-    margin-right: 20px;
-    border: 0;
-    -ms-transform: scale(2);
-    /* IE */
-    -moz-transform: scale(2);
-    /* FF */
-    -webkit-transform: scale(2);
-    /* Safari and Chrome */
-    transform: scale(2);
-    /* Opera */ }
-  .form-login-01 .title-remember {
-    font-family: "Roboto";
-    font-size: 20px;
-    color: #E8EAF6; }
-  .form-login-01 .btn-login {
-    font-family: "Roboto";
-    cursor: pointer;
-    font-size: 20px;
-    position: absolute;
-    width: 100%;
-    height: 47px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    bottom: 0;
-    color: #E8EAF6;
-    border: 0;
-    border-top: 1px solid #E8EAF6;
-    border-bottom: 1px solid #3949AB;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#512da8+0,311b92+100 */
-    background: #3F51B5;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #303F9F 0%, #1A237E 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #303F9F 0%, #1A237E 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #303F9F 0%, #1A237E 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303F9F', endColorstr='#1A237E',GradientType=0 );
-    /* IE6-9 */ }
+/*
+Error: File to import not found or unreadable: ../../shared/scss/variables.
+       Load paths:
+         E:/app/prueba44/src/components/buttons
+         E:/app/prueba44/src/components/effects
+         E:/app/prueba44/src/components/errorViews
+         E:/app/prueba44/src/components/footer
+         E:/app/prueba44/src/components/forms
+         E:/app/prueba44/src/components/header
+         E:/app/prueba44/src/components/layouts
+         E:/app/prueba44/src/components/list
+         E:/app/prueba44/src/components/loaders
+         E:/app/prueba44/src/components/login
+         E:/app/prueba44/src/components/logos
+         E:/app/prueba44/src/components/menu-horizontal
+         E:/app/prueba44/src/components/menu-vertical
+         E:/app/prueba44/src/components/navigations
+         E:/app/prueba44/src/components/page-controls
+         E:/app/prueba44/src/components/panel
+         E:/app/prueba44/src/components/search
+         E:/app/prueba44/src/components/slides
+         E:/app/prueba44/src/components/Table
+         E:/app/prueba44/src/components/tabs
+         E:/app/prueba44/src/components/util01
+        on line 1 of src/components/login/03form-login-01.scss
 
-/*# sourceMappingURL=03form-login-01.css.map */
+1: @import "../../shared/scss/variables";
+2: @import "03form-mixins-login-01";
+3: 
+4: 
+5: @font-face{
+6:     font-family:"Roboto";
+
+Backtrace:
+src/components/login/03form-login-01.scss:1
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:67:in `rescue in import'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:44:in `import'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:28:in `imported_file'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:37:in `css_import?'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ../../shared/scss/variables.\A        Load paths:\A          E:/app/prueba44/src/components/buttons\A          E:/app/prueba44/src/components/effects\A          E:/app/prueba44/src/components/errorViews\A          E:/app/prueba44/src/components/footer\A          E:/app/prueba44/src/components/forms\A          E:/app/prueba44/src/components/header\A          E:/app/prueba44/src/components/layouts\A          E:/app/prueba44/src/components/list\A          E:/app/prueba44/src/components/loaders\A          E:/app/prueba44/src/components/login\A          E:/app/prueba44/src/components/logos\A          E:/app/prueba44/src/components/menu-horizontal\A          E:/app/prueba44/src/components/menu-vertical\A          E:/app/prueba44/src/components/navigations\A          E:/app/prueba44/src/components/page-controls\A          E:/app/prueba44/src/components/panel\A          E:/app/prueba44/src/components/search\A          E:/app/prueba44/src/components/slides\A          E:/app/prueba44/src/components/Table\A          E:/app/prueba44/src/components/tabs\A          E:/app/prueba44/src/components/util01\A         on line 1 of src/components/login/03form-login-01.scss\A \A 1: @import \"../../shared/scss/variables\";\A 2: @import \"03form-mixins-login-01\";\A 3: \A 4: \A 5: @font-face{\A 6:     font-family:\"Roboto\";"; }

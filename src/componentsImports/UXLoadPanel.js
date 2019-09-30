@@ -1,7 +1,9 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 import {util} from './util01.js';
 import {components} from './components01.js';
-import {BindComponent} from './bindComponent.js'
+//import {BindComponent} from './bindComponent.js'
 
 import { appendToContainer,recreateNode,removeContainer } from "./utilContainer.js";
 
@@ -12,26 +14,22 @@ var controls;
     "use strict";
     ns.UXLoadPanel = (function(){
     
-        return function(options){
-                       
-           
+        return function(options){   
            var params=[].slice.call(arguments);
            if (params.length>0){  
               this.initControl.apply(this,params);
            }
-           
         }
     })();
     
     ns.UXLoadPanel.prototype = new components.container();
-    
     
     ns.UXLoadPanel.prototype.initControl=function(options){
         ;(function(options){
             
             options.id=options.id||undefined
             options.containerComponent=options.containerComponent||".wrapper.page.child";
-            options.containerView = options.containerView || ".main-body"
+            options.containerView = options.containerView || ".main-body .wrapper.page.child.layout"
             options.textTemplate = options.textTemplate||undefined   
         })(options)
         
@@ -39,12 +37,32 @@ var controls;
         this.initEventLoadPanel(options)
           
     }
+    /*
+    ns.UXLoadPanel.prototype.initevent=function(options){
+       this.initEventLoadPanel(options)
+    }
+    ns.UXLoadPanel.prototype.renderTemplate=function(props){
+        var self=this
+        if (self.options.textTemplate){
+           console.log("estoy dentro de textTemplate")
+           var result = self.options.textTemplate(props)
+         ReactDOM.render(result, $(self.options.container)[0]);
+        }
+    }
+    ns.UXLoadPanel.prototype.render=function(){
+        var self=this
+        console.dir(self.options)
+        self.renderTemplate(self.options.data);
+        
+        self.initevent() 
+    }
+    */
     ns.UXLoadPanel.prototype.initEventLoadPanel = function(options){
        var self=this
        var optionsLoadPanel=options
        console.log('estoy en initeventloadpantel')
        console.log(options.id)
-       var containerView=".main-body"
+       var containerView=".main-body .childLayout"
        var id=options.id
        var $template=$('#'+id+'.wrapper.page.child');
        /*
@@ -55,12 +73,15 @@ var controls;
         $template=$('#'+id+' .wrapper.page.child');
        }
        var $buttonBack
-      
+        console.log($template.length)
+        $('.childLayout').removeClass("animation");
+        ReactDOM.unmountComponentAtNode($('.main-body .childLayout')[0]);
        if ($template.length==0 && id){
           
         var panelControl=new components.container({
+           ReactDOM:ReactDOM, 
            container:containerView,
-           textTemplate:options.textTemplate,
+           templateReact: options.textTemplate,
            data:{id:id}
         })
         panelControl.initevent=function(options){
@@ -87,20 +108,6 @@ var controls;
                })
             }
         }
-        panelControl.bind=function(options){
-            var self=this;
-            console.log("estoy en function bind")
-            console.dir(self)
-            
-            var bind=new BindComponent({
-                containerView:'#'+id,
-                target:self
-            })
-            
-        }
-        panelControl.onClick=function(e){
-           console.log("estoy dentro de panelControl Click")
-        }
        }
 
     }
@@ -109,32 +116,39 @@ var controls;
         console.log("estoy dentro de changeAnimation")
         //console.dir($template)
         var id=options.id
-        var $template=$('#'+id+'.wrapper.page.child');
-        var reftemplate= '#'+id+'.wrapper.page.child'
+        console.log(id)
+        var $template=$('.childLayout');
+        var reftemplate='#'+id+'.wrapper.page.child'
         
-        if ($template.length==0){
-          $template=$('#'+id+' .wrapper.page.child');
-          reftemplate='#'+id+' .wrapper.page.child'
+        if ($(reftemplate).length==0){
+          $template=$('.childLayout');
+          reftemplate='#'+id+'.wrapper.page.child'
         }
         console.dir($template)
         console.log(reftemplate)
         if ($template.hasClass("animation")){
          $template.removeClass("animation")
+         $('#'+id+'.wrapper.page.child').removeClass('animation');
          if (remove){
              var timer=setTimeout(function(){
                  //removeContainer('#'+id+'.wrapper.page.child')
-                 removeContainer(reftemplate)
+                 //removeContainer(reftemplate)
+                 ReactDOM.unmountComponentAtNode($('.main-body .childLayout')[0]);
                  clearTimeout(timer)
              },400) 
          }
         }else{
          $template.addClass("animation")
+         $('#'+id+'.wrapper.page.child').addClass('animation');
         }
     }
     
 })(controls=controls||{},components,jQuery)
 
-export {controls}
+
+var UXLoadPanel=controls.UXLoadPanel
+export {UXLoadPanel}
+
 if (!window.controls)
    window.controls={}
    

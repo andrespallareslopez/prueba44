@@ -1,196 +1,82 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0; }
+/*
+Error: File to import not found or unreadable: ../../../shared/scss/variables.
+       Load paths:
+         E:/app/prueba44/src/components/buttons
+         E:/app/prueba44/src/components/effects
+         E:/app/prueba44/src/components/errorViews
+         E:/app/prueba44/src/components/footer
+         E:/app/prueba44/src/components/forms
+         E:/app/prueba44/src/components/header
+         E:/app/prueba44/src/components/layouts
+         E:/app/prueba44/src/components/list
+         E:/app/prueba44/src/components/loaders
+         E:/app/prueba44/src/components/login
+         E:/app/prueba44/src/components/logos
+         E:/app/prueba44/src/components/menu-horizontal
+         E:/app/prueba44/src/components/menu-vertical
+         E:/app/prueba44/src/components/navigations
+         E:/app/prueba44/src/components/page-controls
+         E:/app/prueba44/src/components/panel
+         E:/app/prueba44/src/components/search
+         E:/app/prueba44/src/components/slides
+         E:/app/prueba44/src/components/Table
+         E:/app/prueba44/src/components/tabs
+         E:/app/prueba44/src/components/util01
+        on line 3 of src/components/layouts/layout0403/layout0403.scss
 
-.cf:before,
-.cf:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
+1: 
+2: 
+3: @import "../../../shared/scss/variables";
+4: 
+5: @import "../../../shared/scss/reset";
+6: 
+7: button::-moz-focus-inner {
+8:   border: 0;
 
-.cf:after {
-  clear: both; }
-
-*[data-yield-for] {
-  display: none; }
-
-*[data-yield-to] {
-  display: inline-block;
-  position: relative; }
-
-button::-moz-focus-inner {
-  border: 0; }
-
-button:focus {
-  outline: 0; }
-
-button:active {
-  outline: 0; }
-
-html {
-  overflow: hidden;
-  overflow-y: auto; }
-
-html, body {
-  height: 100%;
-  border: 0; }
-
-.container {
-  display: block;
-  position: relative;
-  width: 100%;
-  max-width: 960px;
-  min-height: 100vh;
-  margin: 0 auto;
-  border: 0; }
-
-.wrapper {
-  display: block;
-  position: relative;
-  width: 100%;
-  max-width: 960px;
-  min-height: 100vh;
-  margin: 0 auto;
-  border: 0;
-  margin-left: 0px;
-  transition: all 0.3s ease;
-  z-index: 20; }
-
-aside.menu-area {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px;
-  min-height: 100%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#673ab7+0,9575cd+100 */
-  background: #3F51B5;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #3F51B5 0%, #7986CB 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #3F51B5 0%, #7986CB 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #3F51B5 0%, #7986CB 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3F51B5', endColorstr='#7986CB',GradientType=0 );
-  /* IE6-9 */
-  -webkit-box-shadow: 4px 0px 5px -1px rgba(51, 47, 51, 0.81);
-  -moz-box-shadow: 4px 0px 5px -1px rgba(51, 47, 51, 0.81);
-  box-shadow: 4px 0px 5px -1px rgba(51, 47, 51, 0.81);
-  transition: all 0.3s ease-in-out; }
-
-header {
-  display: none;
-  position: relative;
-  background: #3F51B5;
-  width: 100%;
-  height: 15%; }
-
-nav.actions {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 51px;
-  padding: 0 10px;
-  /*
-  background:#673AB7;
-  -webkit-box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
-   box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
-  */
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#673ab7+0,9575cd+100 */
-  background: #3F51B5;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #1A237E 0%, #3F51B5 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #1A237E 0%, #3F51B5 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #1A237E 0%, #3F51B5 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1A237E', endColorstr='#3F51B5',GradientType=0 );
-  /* IE6-9 */
-  -webkit-box-shadow: 0px 3px 4px 1px #787878;
-  -moz-box-shadow: 0px 3px 4px 1px #787878;
-  box-shadow: 0px 3px 4px 1px #787878;
-  z-index: 999; }
-
-main {
-  display: block;
-  position: relative;
-  width: 100%;
-  min-height: calc(100vh - 51px - 51px);
-  background: #E8EAF6;
-  border: 0; }
-
-.content {
-  display: block;
-  position: relative;
-  width: 100%;
-  min-height: calc(100vh - 51px - 51px);
-  border: 1;
-  padding: 7px; }
-
-footer {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 51px;
-  background: #E8EAF6;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#673ab7+0,9575cd+100 */
-  background: #3F51B5;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #3F51B5 0%, #1A237E 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #3F51B5 0%, #1A237E 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #3F51B5 0%, #1A237E 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3F51B5', endColorstr='#1A237E',GradientType=0 );
-  /* IE6-9 */
-  -webkit-box-shadow: 0px -7px 18px -5px rgba(51, 47, 51, 0.81);
-  -moz-box-shadow: 0px -7px 18px -5px rgba(51, 47, 51, 0.81);
-  box-shadow: 0px -7px 18px -5px rgba(51, 47, 51, 0.81); }
-
-.push-float-left {
-  float: left; }
-
-.push-float-right {
-  float: right; }
-
-@media (min-width: 768px) {
-  header {
-    display: block;
-    height: 15vh;
-    top: 0;
-    left: 0; }
-
-  main, .content {
-    min-height: calc(100vh - 15vh - 51px - 51px); }
-
-  main, footer, header, nav.actions {
-    width: calc(100% - 200px); }
-
-  div.wrapper {
-    padding-left: 7px;
-    margin-left: 200px; }
-
-  #btn-toggle-left {
-    display: none; }
-
-  #btn-toggle-right {
-    display: none; }
-
-  .logo {
-    width: 15%;
-    height: 100%;
-    float: left; }
-
-  .title-application {
-    color: #311b92;
-    float: left;
-    top: -50%;
-    transform: translateY(50%); } }
-
-/*# sourceMappingURL=layout0403.css.map */
+Backtrace:
+src/components/layouts/layout0403/layout0403.scss:3
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:67:in `rescue in import'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:44:in `import'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:28:in `imported_file'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:37:in `css_import?'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ../../../shared/scss/variables.\A        Load paths:\A          E:/app/prueba44/src/components/buttons\A          E:/app/prueba44/src/components/effects\A          E:/app/prueba44/src/components/errorViews\A          E:/app/prueba44/src/components/footer\A          E:/app/prueba44/src/components/forms\A          E:/app/prueba44/src/components/header\A          E:/app/prueba44/src/components/layouts\A          E:/app/prueba44/src/components/list\A          E:/app/prueba44/src/components/loaders\A          E:/app/prueba44/src/components/login\A          E:/app/prueba44/src/components/logos\A          E:/app/prueba44/src/components/menu-horizontal\A          E:/app/prueba44/src/components/menu-vertical\A          E:/app/prueba44/src/components/navigations\A          E:/app/prueba44/src/components/page-controls\A          E:/app/prueba44/src/components/panel\A          E:/app/prueba44/src/components/search\A          E:/app/prueba44/src/components/slides\A          E:/app/prueba44/src/components/Table\A          E:/app/prueba44/src/components/tabs\A          E:/app/prueba44/src/components/util01\A         on line 3 of src/components/layouts/layout0403/layout0403.scss\A \A 1: \A 2: \A 3: @import \"../../../shared/scss/variables\";\A 4: \A 5: @import \"../../../shared/scss/reset\";\A 6: \A 7: button::-moz-focus-inner {\A 8:   border: 0;"; }

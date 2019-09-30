@@ -444,9 +444,13 @@ var Container
      ns.container.prototype.renderHtml=function(){
         var self=this 
         this.options.conected=true;
+        console.log("Estoy en renderhtml")
         //this.options.cssUrl=undefined;  //reseteamos este valor para que en el mutation observer no entre al valor nodevalues si no nos data un error
         if (this.options.element){
            this.observer.observe(this.options.element,this.options.observerConfig);
+           if (self.options.templateReact){
+              
+           }
            this.render(self.options.data);
         }else{
             console.log("error al crear el observer, objeto this.options.element vacio, el container no esta bien establecido"); 
@@ -562,7 +566,7 @@ var Container
         
         };
         this.mycustom.render=function(templateReact,data){
-           //console.log("estoy en render "+self.options.selector+" en id "+this.id)
+           //console.log("estoy en render "+self.options.container+" en id "+this.id)
            //console.dir(data)
            if (this.id){
                //console.log(this.id.replace(/-/g,"",))
@@ -608,6 +612,9 @@ var Container
      
      ns.container.prototype.render=function(data,state){
         var self=this
+        console.log("estoy en render "+self.options.container+" en id "+this.id)
+        console.dir(self.options.element)
+        console.dir(self.options.templateReact)
         this.options.datatemplate=undefined;
         
         if (data){
@@ -627,7 +634,23 @@ var Container
             
         }else if (this.options.textTemplate && this.options.element){
             this.config.renderName="renderTemplateRaw"; 
+            
             util[this.config.renderName].apply(this,[this.options.datatemplate,this.options.textTemplate,state]);    
+        }else if (this.options.templateReact && this.options.element){
+            console.log("Estoy dentro de react render")
+            return util.renderTemplateCustomElementReact.apply(this,[this.options.datatemplate,this.options.templateReact,state]).then(function(source,statec){
+                
+                //console.log("estoy dentro de renderTemplateCustomElementReact then "+self.options.container)
+                console.dir(self.options.templateReact)
+                self.renderReactTemplate(self.options.templateReact,self.options.datatemplate);
+                
+                return self.promise
+            }).then(function(m){
+                //console.log(m);
+                //console.log("estoy dentro del promise con estado "+state)
+                util.manageStateComponent.apply(self,[state,m]);
+            }) 
+            
         }else if (this.options.selector && this.options.nametemplate){
             //Devuelve un promise
             this.config.renderName="renderTemplateCustomElement";           
