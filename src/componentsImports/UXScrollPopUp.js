@@ -62,7 +62,8 @@ var controls;
       
 })(controls=controls||{},UXScroll,jQuery)
      
-export {controls}
+var UXScrollPopUp=controls.UXScrollPopUp
+export {UXScrollPopUp}
 if (!window.controls)
    window.controls={}    
     

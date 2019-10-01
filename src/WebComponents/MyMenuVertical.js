@@ -6,6 +6,7 @@ import {UXLoadPanel} from 'src/componentsImports/UXLoadPanel.js'
 
 import MyPage01 from 'src/lib/MyPage01.js'
 import MyPage02 from 'src/lib/MyPage02.js'
+import MyPage03 from 'src/lib/MyPage03.js'
 
 import 'src/components/menu-vertical/03Menu-vertical01/03Menu-vertical01.css';
 import 'src/components/list/03List-collections.css'
@@ -37,7 +38,9 @@ const MyMenuVertical = (props) => {
                  )
               break;
               case 'template03':
-                 
+                  template=(props)=> (
+                    <MyPage03 id={props.id}></MyPage03>
+                 )
               break;
               case 'template04':
                  
