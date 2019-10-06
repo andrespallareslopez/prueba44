@@ -85,7 +85,8 @@ var controls;
      }
 })(controls=controls||{},components,jQuery)
 
-export {controls}
+var UXSearchPanel=controls.UXSearchPanel;
+export {UXSearchPanel}
 if (!window.controls)
    window.controls={}
    

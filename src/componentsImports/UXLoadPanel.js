@@ -29,7 +29,7 @@ var controls;
             
             options.id=options.id||undefined
             options.containerComponent=options.containerComponent||".wrapper.page.child";
-            options.containerView = options.containerView || ".main-body .wrapper.page.child.layout"
+            options.containerView = options.containerView || ".main-body .childLayout"
             options.textTemplate = options.textTemplate||undefined   
         })(options)
         

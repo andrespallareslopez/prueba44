@@ -4,8 +4,8 @@
   "description": "testing components with reaxt",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server --port=8083",
+    "devwindow":"concurrently --kill-others \"npm run build:babel\" \"npm run build:babelcomponent\" \"npm run startwindow\" ",
+    "startwindow": "live-server --port=8083",
     "build:babel": "npx babel src/index.js -w -o src/index-bis.js",
     "build:babelcomponent": "npx babel src/WebComponents -w --out-dir src/lib",
     "build:sass": "sass -w src/components/**"
@@ -21,6 +21,7 @@
     "components-font-awesome": "^4.7.0",
     "css-loader": "^3.2.0",
     "html-webpack-plugin": "^3.2.0",
+    "onchange": "^6.1.0",
     "prop-types": "^15.7.2",
     "style-loader": "^1.0.0",
     "systemjs": "^0.21.4",
@@ -31,6 +32,9 @@
     "webpack-dev-server": "^3.8.1"
   },
   "dependencies": {
+    "cleave.js": "^1.5.3",
+    "concurrently": "^4.1.2",
+    "inputmask": "^4.0.9",
     "jquery": "^1.12.1",
     "linq": "^3.2.1",
     "moment": "^2.24.0",

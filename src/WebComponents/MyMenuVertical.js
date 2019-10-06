@@ -7,6 +7,7 @@ import {UXLoadPanel} from 'src/componentsImports/UXLoadPanel.js'
 import MyPage01 from 'src/lib/MyPage01.js'
 import MyPage02 from 'src/lib/MyPage02.js'
 import MyPage03 from 'src/lib/MyPage03.js'
+import MyPageSearch from 'src/lib/MyPageSearch.js'
 
 import 'src/components/menu-vertical/03Menu-vertical01/03Menu-vertical01.css';
 import 'src/components/list/03List-collections.css'
@@ -15,7 +16,7 @@ const MyMenuVertical = (props) => {
     //console.dir(props);
     var timer=setTimeout(()=>{
         var id=props.id
-        new controls.UXScrollV({
+        new UXScrollV({
             id:id
         })
         
@@ -43,12 +44,32 @@ const MyMenuVertical = (props) => {
                  )
               break;
               case 'template04':
-                 
+                 template=(props)=>(
+                   <MyPageSearch id={props.id} ></MyPageSearch>
+                 )
               break;
               case 'template05':
                  
               break;
               case 'template06':
+                 
+              break;
+              case 'template07':
+                 
+              break;
+              case 'template08':
+                 
+              break;
+              case 'template09':
+                 
+              break;
+              case 'template10':
+                 
+              break;
+              case 'template11':
+                 
+              break;
+              case 'template12':
                  
               break;
             }

@@ -1,80 +1,110 @@
-/*
-Error: File to import not found or unreadable: ../../shared/scss/variables.
-       Load paths:
-         E:/app/prueba44/src/components/buttons
-         E:/app/prueba44/src/components/effects
-         E:/app/prueba44/src/components/errorViews
-         E:/app/prueba44/src/components/footer
-         E:/app/prueba44/src/components/forms
-         E:/app/prueba44/src/components/header
-         E:/app/prueba44/src/components/layouts
-         E:/app/prueba44/src/components/list
-         E:/app/prueba44/src/components/loaders
-         E:/app/prueba44/src/components/login
-         E:/app/prueba44/src/components/logos
-         E:/app/prueba44/src/components/menu-horizontal
-         E:/app/prueba44/src/components/menu-vertical
-         E:/app/prueba44/src/components/navigations
-         E:/app/prueba44/src/components/page-controls
-         E:/app/prueba44/src/components/panel
-         E:/app/prueba44/src/components/search
-         E:/app/prueba44/src/components/slides
-         E:/app/prueba44/src/components/Table
-         E:/app/prueba44/src/components/tabs
-         E:/app/prueba44/src/components/util01
-        on line 1 of src/components/search/03search.scss
+.form-search {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  border-bottom: 0px solid #E8EAF6;
+  width: 65px;
+  height: 45px;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  z-index: 50; }
 
-1: @import "../../shared/scss/variables";
-2: 
-3: 
-4: .form-search{
-5:     position:relative;
-6:     display:block;
+.btn-progress {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  border-bottom: 0px solid #E8EAF6;
+  width: 65px;
+  height: 45px;
+  visibility: hidden;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  z-index: 50; }
 
-Backtrace:
-src/components/search/03search.scss:1
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:67:in `rescue in import'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:44:in `import'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:28:in `imported_file'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:37:in `css_import?'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../../shared/scss/variables.\A        Load paths:\A          E:/app/prueba44/src/components/buttons\A          E:/app/prueba44/src/components/effects\A          E:/app/prueba44/src/components/errorViews\A          E:/app/prueba44/src/components/footer\A          E:/app/prueba44/src/components/forms\A          E:/app/prueba44/src/components/header\A          E:/app/prueba44/src/components/layouts\A          E:/app/prueba44/src/components/list\A          E:/app/prueba44/src/components/loaders\A          E:/app/prueba44/src/components/login\A          E:/app/prueba44/src/components/logos\A          E:/app/prueba44/src/components/menu-horizontal\A          E:/app/prueba44/src/components/menu-vertical\A          E:/app/prueba44/src/components/navigations\A          E:/app/prueba44/src/components/page-controls\A          E:/app/prueba44/src/components/panel\A          E:/app/prueba44/src/components/search\A          E:/app/prueba44/src/components/slides\A          E:/app/prueba44/src/components/Table\A          E:/app/prueba44/src/components/tabs\A          E:/app/prueba44/src/components/util01\A         on line 1 of src/components/search/03search.scss\A \A 1: @import \"../../shared/scss/variables\";\A 2: \A 3: \A 4: .form-search{\A 5:     position:relative;\A 6:     display:block;"; }
+.btn-search {
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  background: transparent;
+  cursor: pointer;
+  color: #E8EAF6;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  transition: all 0s ease-in-out; }
+
+.btn-spin-progress {
+  display: inline-block;
+  visibility: hidden;
+  box-sizing: border-box;
+  position: relative;
+  background: transparent;
+  cursor: pointer;
+  color: #E8EAF6;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin-left: -35px; }
+
+.open-progress .btn-spin-progress {
+  visibility: visible; }
+
+.input-search {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-top: 0px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0px solid #E8EAF6;
+  color: #E8EAF6;
+  width: 0px;
+  font-size: 16px;
+  right: 0px;
+  top: 0px;
+  vertical-align: top;
+  /*importante en un input */
+  height: 38px;
+  transform: translateX(150%);
+  transition: all .3s ease-in-out,width 0.2s ease-in-out; }
+
+.btn-search-close {
+  margin-left: -10px;
+  opacity: 0; }
+
+.form-search.open-search {
+  /*right:67px;*/
+  width: 100%;
+  max-width: 285px; }
+
+.open-search .input-search {
+  transform: translateX(0%);
+  width: calc(100% - 70px);
+  max-width: 135px;
+  border-bottom: 2px solid #E8EAF6; }
+
+.fa-18x {
+  font-size: 1.7em; }
+
+.open-search .btn-search {
+  left: 0px; }
+
+.open-search .btn-search-close {
+  opacity: 1; }
+
+/*# sourceMappingURL=03search.css.map */

@@ -18,7 +18,7 @@ var controls;
          
         }
     })();
-
+    
     ns.UXKeyForm.prototype=new components.container();
     
     ns.UXKeyForm.prototype.initControl=function(options){
@@ -87,9 +87,9 @@ var controls;
                 prevObjeto.find('.group.group-block').first().addClass('current-element');
                 prevObjeto.find('.group.group-block').first().find('input').first().focus();
             }
-           
             
-
+            
+            
          });
           
      }

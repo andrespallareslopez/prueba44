@@ -4,11 +4,11 @@ const MyPage02 = (props) => {
    
     return (
         <div id={props.id} className="wrapper page child" >
-        <div className="nav" data-bind-html="content:onLoadContent">
+        <div className="nav" >
             <nav  >
-               <button type="button" id="btn-toggle-back-3" className="nav-mobile push-float-left" data-bind-style="display:cadena" data-bind-on="click:onClick" >
+               <button type="button" id="btn-toggle-back-3" className="nav-mobile push-float-left"  >
                  <span className="fa fa-chevron-left" ></span>
-                 <span className="texto-btn" data-bind-to="text:labelback" > Back</span>
+                 <span className="texto-btn"  > Back</span>
                </button>
             </nav>
         </div>  
@@ -20,7 +20,7 @@ const MyPage02 = (props) => {
            </main>
         </div>
         <div className="footer">
-            <footer  data-bind-html='property:textTemplate'>
+            <footer >
                 <div className="push-center-inner push-center-3x">
                     <button id="btn-ok" className="nav-mobile nav-2x push-float-left ripple">
                   <span className="fa fa-check-circle fa-2x" ></span>
