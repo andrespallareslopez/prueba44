@@ -1,4 +1,4 @@
-/// <reference path="../shared/js/main.d.ts" />
+
 
 import {util} from './util01.js';
 import {components} from './components01.js';

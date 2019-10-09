@@ -4,9 +4,9 @@ import {UXButtonScroll} from '/src/componentsImports/UXButtonScroll.js'
 import {UXSearchList} from 'src/componentsImports/UXSearchList.js'
 
 
-import 'node_modules/tether/dist/css/tether.css'
-import 'src/components/panel/04PanelScroll01.css'
-import 'src/components/list/03datalist01.css'
+import '/node_modules/tether/dist/css/tether.css'
+import '/src/components/panel/04PanelScroll01.css'
+import '/src/components/list/03datalist01.css'
 
 
 const MyComboSearch = (props) => {

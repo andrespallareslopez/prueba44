@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import 'src/components/buttons/03buttonmovile01.css';
+import '/src/components/buttons/03buttonmovile01.css';
 
 var MyNav=() => {
 

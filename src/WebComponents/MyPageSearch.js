@@ -1,7 +1,7 @@
 import React from 'react'
-import MyPanelScrollPopUp from 'src/lib/MyPanelScrollPopUp.js'
-import MyButtonSearch from 'src/lib/MyButtonSearch.js'
-import MyPanelScrollSearch from 'src/lib/MyPanelScrollSearch.js'
+import MyPanelScrollPopUp from '/src/lib/MyPanelScrollPopUp.js'
+import MyButtonSearch from '/src/lib/MyButtonSearch.js'
+import MyPanelScrollSearch from '/src/lib/MyPanelScrollSearch.js'
 
 import {datos,mesas,categorias,articulos} from '/src/listInMemory.js'
 

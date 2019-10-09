@@ -5,7 +5,8 @@ import ReactDOM from 'react-dom'
 import Layout from 'src/lib/Layout.js'
 
 
-import $,{jQuery} from 'jquery'
+//import $,{jQuery} from 'jquery'
+import jquery from './import-jquery.js'
 
 
 const cadenaweblatoutsstring = (

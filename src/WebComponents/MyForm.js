@@ -1,12 +1,12 @@
 import React from 'react'
-import {UXKeyForm} from 'src/componentsImports/UXKeyform.js'
+import {UXKeyForm} from '/src/componentsImports/UXKeyform.js'
 
-import MyInput from 'src/lib/MyInput.js' 
-import MyCalendar from 'src/lib/MyCalendar.js'
-import MyCombo from 'src/lib/MyCombo.js'
-import MyComboSearch from 'src/lib/MyComboSearch.js'
+import MyInput from '/src/lib/MyInput.js' 
+import MyCalendar from '/src/lib/MyCalendar.js'
+import MyCombo from '/src/lib/MyCombo.js'
+import MyComboSearch from '/src/lib/MyComboSearch.js'
 
-import 'src/components/forms/03form-fix-basic-01.css'
+import '/src/components/forms/03form-fix-basic-01.css'
 
 import {datos,mesas,categorias,articulos} from '/src/listInMemory.js'
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import {components} from '/src/componentsImports/components01.js'
 import {UXSlidePanels} from '/src/componentsImports/UXSlidePanels.js'
-import MySlidePanelDetail from 'src/lib/MySlidePanelDetail.js'
-import 'src/components/slides/04slide-container.css'
-import 'src/components/list/03List-group-buttons.css'
+import MySlidePanelDetail from '/src/lib/MySlidePanelDetail.js'
+import '/src/components/slides/04slide-container.css'
+import '/src/components/list/03List-group-buttons.css'
 
 const MySlidePanel = (props) => {
    

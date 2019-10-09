@@ -1,4 +1,4 @@
-/// <reference path="../shared/js/main.d.ts" />
+
 
 
 ;(function(ns,$){

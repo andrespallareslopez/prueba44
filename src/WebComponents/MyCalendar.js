@@ -2,8 +2,8 @@ import React from 'react'
 
 import {UXDatePicker} from '/src/componentsImports/UXDatePicker.js'
 
-import 'node_modules/pikaday/css/pikaday.css'
-import 'node_modules/tether/dist/css/tether.css'
+import '/node_modules/pikaday/css/pikaday.css'
+import '/node_modules/tether/dist/css/tether.css'
 
 const MyCalendar = (props) => {
     let id=props.id

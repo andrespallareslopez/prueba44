@@ -1,11 +1,11 @@
 import React from 'react'
-import MyNav from 'src/lib/MyNav.js'
-import MyMenuVertical from 'src/lib/MyMenuVertical.js'
-import MyTab from 'src/lib/MyTab.js'
+import MyNav from '/src/lib/MyNav.js'
+import MyMenuVertical from '/src/lib/MyMenuVertical.js'
+import MyTab from '/src/lib/MyTab.js'
 
-import 'src/components/layouts/03layout02/03layout02.css'
-import 'src/components/layouts/03layout02/03transition02.css'
-import 'src/components/effects/03rippleEffects01.css'
+import '/src/components/layouts/03layout02/03layout02.css'
+import '/src/components/layouts/03layout02/03transition02.css'
+import '/src/components/effects/03rippleEffects01.css'
 
 
 const Layout =()=>{
@@ -56,4 +56,4 @@ const Layout =()=>{
     )
 }
 
-export default Layout
+export default Layout;
