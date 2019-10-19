@@ -16,5 +16,4 @@ steps:
 - script: |
    npx babel src/index.js -w -o src/index-bis.js
    npx babel src/WebComponents -w --out-dir src/lib
-   live-server --port=8083
-  displayName: 'Run a multi-line script'
+  displayName: 'Run a multi-line script for running commands babel'
