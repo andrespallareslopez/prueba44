@@ -13,7 +13,7 @@ const Layout =()=>{
         <div>
         <header>
             <div className="logo">
-               
+                
             </div>
             <h1 className="title-application">My Application</h1>
         </header>

@@ -13,8 +13,9 @@ SystemJS.config({
         css: 'node_modules/systemjs-plugin-css/css.js',
         text: 'src/text.js',
         'plugin-babel': 'node_modules/systemjs-plugin-babel/plugin-babel.js',
-        'systemjs-babel-build':'node_modules/systemjs-plugin-babel/systemjs-babel-browser.js'
-        
+        'systemjs-babel-build':'node_modules/systemjs-plugin-babel/systemjs-babel-browser.js',
+        'inputmask':'node_modules/inputmask/dist/inputmask/inputmask.js',
+        'inputmask.dependencyLibs':'inputmask.dependencyLib.js'
     },
     packages:{
        
