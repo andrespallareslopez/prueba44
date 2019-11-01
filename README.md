@@ -1,6 +1,6 @@
 # Todo-do List
 
-- [ ] MyInputNum
+- [*] MyInputNum
 - [ ] MyInputMask
 - [ ] MyInputCreditCard
 - [ ] MyTable

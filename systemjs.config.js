@@ -15,7 +15,29 @@ SystemJS.config({
         'plugin-babel': 'node_modules/systemjs-plugin-babel/plugin-babel.js',
         'systemjs-babel-build':'node_modules/systemjs-plugin-babel/systemjs-babel-browser.js',
         'inputmask':'node_modules/inputmask/dist/inputmask/inputmask.js',
-        'inputmask.dependencyLibs':'inputmask.dependencyLib.js'
+        'inputmask.dependencyLibs':'inputmask.dependencyLib.js',
+        'wclayout':'src/lib/Layout.js',
+        'wctab':'/src/lib/MyTab.js',
+        'wcmenuvertical':'/src/lib/MyMenuVertical.js',
+        'wcnav':'/src/lib/MyNav.js',
+        'wcform':'/src/lib/MyForm.js',
+        'wcslidepanel':'src/lib/MySlidePanel.js',
+        'wcpanelscrollcontent':'/src/lib/MyPanelScrollContent.js',
+        'wcinputnum':'/src/lib/MyInputNum.js',
+        'wccombosearch':'/src/lib/MyComboSearch.js',
+        'wccombo':'/src/lib/MyCombo.js',
+        'wccalendar':'/src/lib/MyCalendar.js',
+        'wcinput':'/src/lib/MyInput.js',
+        'wcpanelscrollsearch':'/src/lib/MyPanelScrollSearch.js',
+        'wcbuttonsearch':'/src/lib/MyButtonSearch.js',
+        'wcpanelscrollpopup':'/src/lib/MyPanelScrollPopUp.js',
+        'wcslidepaneldetail':'/src/lib/MySlidePanelDetail.js',
+        'wclistgrpbuttons':'/src/lib/MyListGrpButtons.js',
+        'wcpagesearch':'/src/lib/MyPageSearch.js',
+        'wcpage03':'/src/lib/MyPage03.js',
+        'wcpage02':'/src/lib/MyPage02.js',
+        'wcpage01':'/src/lib/MyPage01.js'
+
     },
     packages:{
        

@@ -1,8 +1,8 @@
 import React from 'react'
 import {Tab} from '/src/componentsImports/componentstabcontainer.js'
-import {MyPanelScrollContent} from '/src/lib/MyPanelScrollContent.js'
-import {MySlidePanel} from '/src/lib/MySlidePanel.js'
-import {MyForm} from '/src/lib/MyForm.js'
+import {MyPanelScrollContent} from 'wcpanelscrollcontent'
+import {MySlidePanel} from 'wcslidepanel'
+import {MyForm} from 'wcform'
 import {datos,mesas,categorias,articulos} from '/src/listInMemory.js'
 import '/src/components/tabs/tabs01.css'
 

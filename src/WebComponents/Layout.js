@@ -1,7 +1,7 @@
 import React from 'react'
-import {MyNav} from '/src/lib/MyNav.js'
-import {MyMenuVertical} from '/src/lib/MyMenuVertical.js'
-import {MyTab} from '/src/lib/MyTab.js'
+import {MyNav} from 'wcnav'
+import {MyMenuVertical} from 'wcmenuvertical'
+import {MyTab} from 'wctab'
 
 import '/src/components/layouts/03layout02/03layout02.css'
 import '/src/components/layouts/03layout02/03transition02.css'

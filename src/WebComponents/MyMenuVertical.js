@@ -4,10 +4,10 @@ import {UXScrollV} from '/src/componentsImports/UXScrollV.js'
 import {UXAccordeon} from '/src/componentsImports/UXAccordeon.js'
 import {UXLoadPanel} from 'src/componentsImports/UXLoadPanel.js'
 
-import {MyPage01} from '/src/lib/MyPage01.js'
-import {MyPage02} from '/src/lib/MyPage02.js'
-import {MyPage03} from '/src/lib/MyPage03.js'
-import {MyPageSearch} from '/src/lib/MyPageSearch.js'
+import {MyPage01} from 'wcpage02'
+import {MyPage02} from 'wcpage02'
+import {MyPage03} from 'wcpage03'
+import {MyPageSearch} from 'wcpagesearch'
 
 import '/src/components/menu-vertical/03Menu-vertical01/03Menu-vertical01.css';
 import '/src/components/list/03List-collections.css'
