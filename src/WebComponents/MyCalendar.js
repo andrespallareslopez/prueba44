@@ -5,7 +5,7 @@ import {UXDatePicker} from '/src/componentsImports/UXDatePicker.js'
 import '/node_modules/pikaday/css/pikaday.css'
 import '/node_modules/tether/dist/css/tether.css'
 
-const MyCalendar = (props) => {
+export const MyCalendar = (props) => {
     let id=props.id
     let timer1 = setTimeout(() => { 
        new UXDatePicker({
@@ -29,4 +29,3 @@ const MyCalendar = (props) => {
       </div>
     )    
 }
-export default MyCalendar;

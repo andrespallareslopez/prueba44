@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MyInput = (props) => {
+export const MyInput = (props) => {
     
     
     return (
@@ -18,4 +18,3 @@ const MyInput = (props) => {
     </div>
     )
 }
-export default MyInput;

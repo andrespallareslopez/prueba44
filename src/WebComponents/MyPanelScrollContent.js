@@ -1,11 +1,11 @@
 import React from 'react'
 import {UXPanelScroll} from '/src/componentsImports/UXPanelScroll.js'
-import MyListGrpButtons from '/src/lib/MyListGrpButtons.js'
+import {MyListGrpButtons} from '/src/lib/MyListGrpButtons.js'
 
 import '/src/components/panel/04PanelScroll02.css'
 import '/src/components/list/03List-group-buttons.css'
 
-const  MyPanelScrollContent = (props) => {
+export const  MyPanelScrollContent = (props) => {
    //console.dir(props)
    var timer = setTimeout(()=>{
      let id=props.id;
@@ -33,4 +33,4 @@ const  MyPanelScrollContent = (props) => {
     )
 }
 
-export default MyPanelScrollContent;
+

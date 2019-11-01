@@ -1,7 +1,7 @@
 import React from 'react'
 import Inputmask from 'inputmask'
 
-const MyInputNum = (props) => {
+export const MyInputNum = (props) => {
  
     var timer = setTimeout(()=>{
         let id=props.id;
@@ -52,4 +52,4 @@ const MyInputNum = (props) => {
 
     )
 }
-export default MyInputNum;
+

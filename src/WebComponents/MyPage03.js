@@ -1,7 +1,7 @@
 import React from 'react'
-import MyPanelScrollPopUp from '/src/lib/MyPanelScrollPopUp.js'
+import {MyPanelScrollPopUp} from '/src/lib/MyPanelScrollPopUp.js'
 
-const MyPage03 = (props) => {
+export const MyPage03 = (props) => {
     
     
 return (
@@ -30,4 +30,3 @@ return (
     </div>
     )
 }
-export default MyPage03;

@@ -9,7 +9,7 @@ import '/src/components/panel/04PanelScroll01.css'
 import '/src/components/list/03datalist01.css'
 
 
-const MyComboSearch = (props) => {
+export const MyComboSearch = (props) => {
      //console.dir(props.data)
     let cadenadatalist = (props)=>{
         return (
@@ -105,4 +105,4 @@ const MyComboSearch = (props) => {
       </div>
     )
 }
-export default MyComboSearch;
+

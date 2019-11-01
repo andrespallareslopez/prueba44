@@ -5,7 +5,7 @@ import {UXSearchPanel} from '/src/componentsImports/UXSearchPanel.js'
 
 import '/src/components/search/03search.css'
 
-const MyButtonSearch = (props) => {
+export const MyButtonSearch = (props) => {
     
     let timer1 = setTimeout(() => { 
         $("#"+props.id+" "+"#btn-form-search").on("click",function(evt){
@@ -46,4 +46,3 @@ const MyButtonSearch = (props) => {
     </div>
     );
 }
-export default MyButtonSearch;

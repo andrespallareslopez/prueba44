@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MySlidePanelDetail = (props) => {
+export const MySlidePanelDetail = (props) => {
 
     return (
         <ul className="slide-container-items">
@@ -29,4 +29,3 @@ const MySlidePanelDetail = (props) => {
         </ul>
     )
 }
-export default MySlidePanelDetail;

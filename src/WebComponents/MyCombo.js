@@ -7,7 +7,7 @@ import '/node_modules/tether/dist/css/tether.css'
 import '/src/components/panel/04PanelScroll01.css'
 import '/src/components/list/03datalist01.css'
 
-const MyCombo = (props) => {
+export const MyCombo = (props) => {
     //console.dir(props.data)
 
     let cadenadatalist = (props)=>{
@@ -103,4 +103,3 @@ const MyCombo = (props) => {
       </div>
    )
 }
-export default MyCombo;

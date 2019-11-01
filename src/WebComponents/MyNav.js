@@ -3,7 +3,7 @@ import React from 'react'
 
 import '/src/components/buttons/03buttonmovile01.css';
 
-var MyNav=() => {
+export const MyNav=() => {
 
    var timer1=setTimeout(() => {
       $("#btn-toggle-right").click(function(event){
@@ -53,4 +53,3 @@ var MyNav=() => {
 
 }
 
-export default MyNav;

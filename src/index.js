@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 
-import Layout from 'src/lib/Layout.js'
+import {Layout} from 'src/lib/Layout.js'
 
 
 //import $,{jQuery} from 'jquery'

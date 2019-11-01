@@ -2,7 +2,7 @@ import React from 'react'
 
 import '/src/components/list/03List-group-buttons.css'
 
-const MyListGrpButtons = (props)=>{
+export const MyListGrpButtons = (props)=>{
     
     return (
         <div className="list-grp-buttons space-top-1x">
@@ -20,4 +20,3 @@ const MyListGrpButtons = (props)=>{
     )
 
 }
-export default MyListGrpButtons;

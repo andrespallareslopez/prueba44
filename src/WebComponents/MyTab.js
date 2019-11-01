@@ -1,12 +1,12 @@
 import React from 'react'
 import {Tab} from '/src/componentsImports/componentstabcontainer.js'
-import MyPanelScrollContent from '/src/lib/MyPanelScrollContent.js'
-import MySlidePanel from '/src/lib/MySlidePanel.js'
-import MyForm from '/src/lib/MyForm.js'
+import {MyPanelScrollContent} from '/src/lib/MyPanelScrollContent.js'
+import {MySlidePanel} from '/src/lib/MySlidePanel.js'
+import {MyForm} from '/src/lib/MyForm.js'
 import {datos,mesas,categorias,articulos} from '/src/listInMemory.js'
 import '/src/components/tabs/tabs01.css'
 
-const MyTab = (props)=>{
+export const MyTab = (props)=>{
     var timer=setTimeout( () => {
         var tabs=new Tab() 
         //var $listCategorias=$('#panelCategorias')[0]
@@ -48,4 +48,4 @@ const MyTab = (props)=>{
     )
 }
 
-export default MyTab;
+

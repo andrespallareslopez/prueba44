@@ -4,7 +4,7 @@ import {UXScrollPopUp} from '/src/componentsImports/UXScrollPopUp.js'
 import '/src/components/footer/03Menu-popup01.css'
 import '/src/components/footer/04footermenu01.css'
 
-const MyPanelScrollPopUp = (props) => {
+export const MyPanelScrollPopUp = (props) => {
     console.log(props.id)
     var timer = setTimeout( () => {
       var scrollpopup= new UXScrollPopUp({
@@ -42,4 +42,3 @@ const MyPanelScrollPopUp = (props) => {
     </div>
     )
 }
-export default MyPanelScrollPopUp;

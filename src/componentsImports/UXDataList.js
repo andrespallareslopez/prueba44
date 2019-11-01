@@ -1,4 +1,4 @@
-/// <reference path="../shared/js/main.d.ts" />
+import jquery from './import-jquery.js'
 import React from 'react'
 import ReactDOM from 'react-dom'
 

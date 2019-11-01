@@ -3,7 +3,7 @@ import {UXPanelScroll} from '/src/componentsImports/UXPanelScroll.js'
 
 import '/src/components/panel/04PanelScroll02.css'
 
-const MyPanelScrollSearch = (props) => {
+export const MyPanelScrollSearch = (props) => {
     var timer = setTimeout(()=>{
         let id=props.id;
         /*
@@ -32,4 +32,4 @@ const MyPanelScrollSearch = (props) => {
       </div>
     );
 }
-export default MyPanelScrollSearch;
+

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MyPage02 = (props) => {
+export const MyPage02 = (props) => {
    
     return (
         <div id={props.id} className="wrapper page child" >
@@ -37,4 +37,3 @@ const MyPage02 = (props) => {
     </div>
    )
 }
-export default MyPage02;
