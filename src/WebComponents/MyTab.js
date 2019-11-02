@@ -4,6 +4,7 @@ import {MyPanelScrollContent} from 'wcpanelscrollcontent'
 import {MySlidePanel} from 'wcslidepanel'
 import {MyForm} from 'wcform'
 import {datos,mesas,categorias,articulos} from '/src/listInMemory.js'
+
 import '/src/components/tabs/tabs01.css'
 
 export const MyTab = (props)=>{

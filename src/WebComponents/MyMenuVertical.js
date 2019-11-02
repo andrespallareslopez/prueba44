@@ -4,7 +4,7 @@ import {UXScrollV} from '/src/componentsImports/UXScrollV.js'
 import {UXAccordeon} from '/src/componentsImports/UXAccordeon.js'
 import {UXLoadPanel} from 'src/componentsImports/UXLoadPanel.js'
 
-import {MyPage01} from 'wcpage02'
+import {MyPage01} from 'wcpage01'
 import {MyPage02} from 'wcpage02'
 import {MyPage03} from 'wcpage03'
 import {MyPageSearch} from 'wcpagesearch'
