@@ -1,4 +1,3 @@
-/// <reference path="../shared/js/main.d.ts" />
 
 import {util} from './util01.js'
 

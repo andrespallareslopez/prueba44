@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {UXDatePicker} from '/src/componentsImports/UXDatePicker.js'
+import {UXDatePicker} from 'uxdatepicker'
 
 import '/node_modules/pikaday/css/pikaday.css'
 import '/node_modules/tether/dist/css/tether.css'

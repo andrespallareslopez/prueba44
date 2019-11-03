@@ -1,5 +1,5 @@
 import React from 'react'
-import {UXScrollPopUp} from '/src/componentsImports/UXScrollPopUp.js'
+import {UXScrollPopUp} from 'uxscrollpopup'
 
 import '/src/components/footer/03Menu-popup01.css'
 import '/src/components/footer/04footermenu01.css'

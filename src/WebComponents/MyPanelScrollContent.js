@@ -1,5 +1,5 @@
 import React from 'react'
-import {UXPanelScroll} from '/src/componentsImports/UXPanelScroll.js'
+import {UXPanelScroll} from 'uxpanelscroll'
 import {MyListGrpButtons} from 'wclistgrpbuttons'
 
 import '/src/components/panel/04PanelScroll02.css'

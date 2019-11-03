@@ -1,7 +1,7 @@
 import React from 'react'
 
-import {UXDataList} from '/src/componentsImports/UXDataList.js'
-import {UXButtonScroll} from '/src/componentsImports/UXButtonScroll.js'
+import {UXDataList} from 'uxdatalist'
+import {UXButtonScroll} from 'uxbuttonscroll'
 
 import '/node_modules/tether/dist/css/tether.css'
 import '/src/components/panel/04PanelScroll01.css'

@@ -49,8 +49,14 @@ SystemJS.config({
         'uxsearchlist':'src/componentsImports/UXSearchList.js',
         'uxdatalist':'/src/componentsImports/UXDataList.js',
         'uxdatepicker':'/src/componentsImports/UXDatePicker.js',
-        'uxsearchpanel':'/src/componentsImports/UXSearchPanel.js'
-
+        'uxsearchpanel':'/src/componentsImports/UXSearchPanel.js',
+        'localutil':'/src/componentsImports/util01.js',
+        'localcomponent':'/src/componentsImports/components01.js',
+        'localuxscroll':'/src/componentsImports/UXScroll.js',
+        'localuxdatalist':'./UXDataList.js',
+        'localuxbuttonscroll':'./UXButtonScroll.js',
+        'localutilcontainer':'./utilContainer.js'
+        
     },
     packages:{
        

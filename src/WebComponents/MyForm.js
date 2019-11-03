@@ -1,5 +1,5 @@
 import React from 'react'
-import {UXKeyForm} from '/src/componentsImports/UXKeyform.js'
+import {UXKeyForm} from 'uxkeyform'
 
 import {MyInput} from 'wcinput' 
 import {MyCalendar} from 'wccalendar'

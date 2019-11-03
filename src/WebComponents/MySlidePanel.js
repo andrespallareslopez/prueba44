@@ -1,6 +1,6 @@
 import React from 'react'
-import {components} from '/src/componentsImports/components01.js'
-import {UXSlidePanels} from '/src/componentsImports/UXSlidePanels.js'
+
+import {UXSlidePanels} from 'uxslidepanels'
 import {MySlidePanelDetail} from 'wcslidepaneldetail'
 
 import '/src/components/slides/04slide-container.css'

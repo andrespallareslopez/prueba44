@@ -1,5 +1,5 @@
 import React from 'react'
-import {Tab} from '/src/componentsImports/componentstabcontainer.js'
+import {Tab} from 'uxtab'
 import {MyPanelScrollContent} from 'wcpanelscrollcontent'
 import {MySlidePanel} from 'wcslidepanel'
 import {MyForm} from 'wcform'

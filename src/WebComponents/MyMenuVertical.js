@@ -1,8 +1,8 @@
 import React from 'react'
 
-import {UXScrollV} from '/src/componentsImports/UXScrollV.js'
-import {UXAccordeon} from '/src/componentsImports/UXAccordeon.js'
-import {UXLoadPanel} from 'src/componentsImports/UXLoadPanel.js'
+import {UXScrollV} from 'uxscrollv'
+import {UXAccordeon} from 'uxaccordeon'
+import {UXLoadPanel} from 'uxloadpanel'
 
 import {MyPage01} from 'wcpage01'
 import {MyPage02} from 'wcpage02'

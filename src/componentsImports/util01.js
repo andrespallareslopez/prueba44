@@ -3,7 +3,7 @@
 //import {default as Handlebars} from '../../node_modules/handlebars/dist/handlebars.js'
 //import {default as React} from '../../../node_modules/react/umd/react.production.min.js'
 //import ReactDOM from '../../../node_modules/react-dom/umd/react-dom.production.min.js'
-
+import jquery from './import-jquery.js'
 
 var util
 ;(function(ns,$,Handlebars){
