@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import jquery from './import-jquery.js'
-import {util} from './util01.js';
-import {components} from './components01.js';
+import {util} from 'localutil';
+import {components} from 'localcomponent';
 
 var controls;
 

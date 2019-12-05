@@ -1,6 +1,6 @@
 import jquery from './import-jquery.js'
 
-import {util} from './util01.js';
+import {util} from 'localutil';
 
 
 var controls;

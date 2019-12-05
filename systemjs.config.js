@@ -55,8 +55,8 @@ SystemJS.config({
         'localuxscroll':'/src/componentsImports/UXScroll.js',
         'localuxdatalist':'./UXDataList.js',
         'localuxbuttonscroll':'./UXButtonScroll.js',
-        'localutilcontainer':'./utilContainer.js'
-        
+        'localutilcontainer':'./utilContainer.js',
+        'localjquery':'./import-jquery.js'
     },
     packages:{
        

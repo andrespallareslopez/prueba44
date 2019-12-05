@@ -1,8 +1,8 @@
 
 import jquery from './import-jquery.js'    
-import {util} from './util01.js';
-import {components} from './components01.js';
-import {UXScroll} from './UXScroll.js'
+import {util} from 'localutil';
+import {components} from 'localcomponent';
+import {UXScroll} from 'localuxscroll'
 //console.dir(window.controls)
 //var control=controls;
 //console.dir(control);

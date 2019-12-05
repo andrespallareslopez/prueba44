@@ -1,7 +1,7 @@
 import jquery from './import-jquery.js'
-import {util} from './util01.js';
-import {components} from './components01.js';
-import { appendToContainer,recreateNode,removeContainer } from "./utilContainer.js";
+import {util} from 'localutil';
+import {components} from 'localcomponent';
+import { appendToContainer,recreateNode,removeContainer } from 'localutilcontainer';
 
 var controls;
 

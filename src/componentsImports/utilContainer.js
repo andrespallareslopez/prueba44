@@ -1,5 +1,5 @@
 
-export const appendToContainer=function(html,containerview){
+export const appendToContainer = function(html,containerview){
        
     console.log("estoy dentro de appendToContainer");
     console.log(containerview)
@@ -22,7 +22,7 @@ export function recreateNode(el, withChildren) {
       el.parentNode.replaceChild(newEl, el);
     }
 };
-export const removeContainer=function(containerview){
+export const removeContainer = function(containerview){
     var self=this;
     console.log("estoy dentro de removeContainer");
     console.log(containerview)
