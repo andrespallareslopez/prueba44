@@ -2,8 +2,8 @@ import React from 'react'
 import {UXPanelScroll} from 'uxpanelscroll'
 import {MyListGrpButtons} from 'wclistgrpbuttons'
 
-import '/src/components/panel/04PanelScroll02.css'
-import '/src/components/list/03List-group-buttons.css'
+import 'css04panelscroll02'
+import 'css03listgroupbuttons'
 
 export const  MyPanelScrollContent = (props) => {
    //console.dir(props)

@@ -3,8 +3,8 @@ import React from 'react'
 import {UXSlidePanels} from 'uxslidepanels'
 import {MySlidePanelDetail} from 'wcslidepaneldetail'
 
-import '/src/components/slides/04slide-container.css'
-import '/src/components/list/03List-group-buttons.css'
+import 'css04slidecontainer'
+import 'css03listgroupbuttons'
 
 export const MySlidePanel = (props) => {
    

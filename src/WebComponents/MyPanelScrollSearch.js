@@ -1,7 +1,7 @@
 import React from 'react'
 import {UXPanelScroll} from 'uxpanelscroll'
 
-import '/src/components/panel/04PanelScroll02.css'
+import 'css04panelscroll02'
 
 export const MyPanelScrollSearch = (props) => {
     var timer = setTimeout(()=>{

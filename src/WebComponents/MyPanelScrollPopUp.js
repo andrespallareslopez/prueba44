@@ -1,8 +1,8 @@
 import React from 'react'
 import {UXScrollPopUp} from 'uxscrollpopup'
 
-import '/src/components/footer/03Menu-popup01.css'
-import '/src/components/footer/04footermenu01.css'
+import 'css03menupopup01'
+import 'css04footermenu01'
 
 export const MyPanelScrollPopUp = (props) => {
     console.log(props.id)

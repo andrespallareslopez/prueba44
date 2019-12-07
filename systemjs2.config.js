@@ -66,9 +66,16 @@ SystemJS.config({
         'css03layout02':'/src/components/layouts/03layout02/03layout02.css',
         'css03transition02':'/src/components/layouts/03layout02/03transition02.css',
         'css03rippleefects01':'/src/components/effects/03rippleEffects01.css',
-        'css03listcollections':'/src/components/list/03List-collections.css'
+        'css03listcollections':'/src/components/list/03List-collections.css',
+        'css03listgroupbuttons':'/src/components/list/03List-group-buttons.css',
+        'css03menuvertical01':'/src/components/menu-vertical/03Menu-vertical01/03Menu-vertical01.css',
+        'css03buttonmovile01':'/src/components/buttons/03buttonmovile01.css',
+        'css04panelscroll02':'/src/components/panel/04PanelScroll02.css',
+        'css03menupopup01':'/src/components/footer/03Menu-popup01.css',
+        'css04footermenu01':'/src/components/footer/04footermenu01.css',
+        'css04slidecontainer':'/src/components/slides/04slide-container.css',
+        'csstabs01':'/src/components/tabs/tabs01.css'
         
-
     },
     packages:{
        

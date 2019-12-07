@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '/src/components/list/03List-group-buttons.css'
+import 'css03listgroupbuttons'
 
 export const MyListGrpButtons = (props)=>{
     

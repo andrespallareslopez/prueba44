@@ -9,8 +9,8 @@ import {MyPage02} from 'wcpage02'
 import {MyPage03} from 'wcpage03'
 import {MyPageSearch} from 'wcpagesearch'
 
-import '/src/components/menu-vertical/03Menu-vertical01/03Menu-vertical01.css';
-import '/src/components/list/03List-collections.css'
+import 'css03menuvertical01';
+import 'css03listcollections';
 
 export const MyMenuVertical = (props) => {
     //console.dir(props);
