@@ -1,7 +1,7 @@
 
 
-import {util} from './util01.js';
-import {components} from './components01.js';
+import {util} from 'localutil';
+import {components} from 'localcomponent';
 
 var controls;
 
@@ -101,12 +101,12 @@ var controls;
                            console.log("drag left");
                            ii=index;
                            atras();
-                       })
+                       });
                        mt.on("swiperight",function(event){
                            console.log("drag right");
                            ii=index;
                            avance(); 
-                       })
+                       });
                        /*
                        mt.on("panup",function(event){
                            console.log("pan up");

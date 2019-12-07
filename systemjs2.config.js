@@ -53,10 +53,22 @@ SystemJS.config({
         'localutil':'/src/componentsImports/util01.js',
         'localcomponent':'/src/componentsImports/components01.js',
         'localuxscroll':'/src/componentsImports/UXScroll.js',
-        'localuxdatalist':'./UXDataList.js',
-        'localuxbuttonscroll':'./UXButtonScroll.js',
-        'localutilcontainer':'./utilContainer.js'
+        'localuxdatalist':'/src/componentsImports/UXDataList.js',
+        'localuxbuttonscroll':'/src/componentsImports/UXButtonScroll.js',
+        'localutilcontainer':'/src/componentsImports/utilContainer.js',
+        'localjquery':'/src/componentsImports/import-jquery.js',
+        'csspikaday':'/node_modules/pikaday/css/pikaday.css',
+        'csstether':'/node_modules/tether/dist/css/tether.css',
+        'css03datalist01':'/src/components/list/03datalist01.css',
+        'css04panelscroll01':'/src/components/panel/04PanelScroll01.css',
+        'cssformfixbasic01':'/src/components/forms/03form-fix-basic-01.css',
+        'css03search':'/src/components/search/03search.css',
+        'css03layout02':'/src/components/layouts/03layout02/03layout02.css',
+        'css03transition02':'/src/components/layouts/03layout02/03transition02.css',
+        'css03rippleefects01':'/src/components/effects/03rippleEffects01.css',
+        'css03listcollections':'/src/components/list/03List-collections.css'
         
+
     },
     packages:{
        

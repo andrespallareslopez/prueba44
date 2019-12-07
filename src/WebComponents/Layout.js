@@ -3,9 +3,9 @@ import {MyNav} from 'wcnav'
 import {MyMenuVertical} from 'wcmenuvertical'
 import {MyTab} from 'wctab'
 
-import '/src/components/layouts/03layout02/03layout02.css'
-import '/src/components/layouts/03layout02/03transition02.css'
-import '/src/components/effects/03rippleEffects01.css'
+import 'css03layout02'
+import 'css03transition02'
+import 'css03rippleefects01'
 
 
 export const Layout =()=>{

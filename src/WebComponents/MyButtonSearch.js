@@ -1,9 +1,9 @@
 import React from 'react'
 
 
-import {UXSearchPanel} from '/src/componentsImports/UXSearchPanel.js'
+import {UXSearchPanel} from 'uxsearchpanel'
 
-import '/src/components/search/03search.css'
+import 'css03search'
 
 export const MyButtonSearch = (props) => {
     

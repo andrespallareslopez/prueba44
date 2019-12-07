@@ -2,7 +2,7 @@ import jquery from './import-jquery.js'
 
 import {util} from 'localutil';
 import {components} from 'localcomponent';
-import {UXScroll} from './UXScroll.js'
+import {UXScroll} from 'localuxscroll'
 
 
 var controls;

@@ -8,6 +8,7 @@
     "startwindow": "live-server --port=8083",
     "build:babel": "npx babel src/index.js -w -o src/index-bis.js",
     "build:babelcomponent": "npx babel src/WebComponents -w --out-dir src/lib",
+    "babel:ux":"npx babel src/componentsImports -w --out-dir src/componentsImports/lib",
     "build:sass": "sass -w src/components/**"
   },
   "author": "",
@@ -31,6 +32,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-strip-debug": "^3.0.0",
+    "gulp-terser": "^1.2.0",
     "gulp-uglify": "^3.0.2",
     "gulp-useref": "^4.0.0",
     "html-webpack-plugin": "^3.2.0",

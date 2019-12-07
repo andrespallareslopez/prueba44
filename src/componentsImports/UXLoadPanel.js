@@ -5,7 +5,7 @@ import {util} from 'localutil';
 import {components} from 'localcomponent';
 //import {BindComponent} from './bindComponent.js'
 
-import { appendToContainer,recreateNode,removeContainer } from "./utilContainer.js";
+import { appendToContainer,recreateNode,removeContainer } from "localutilcontainer";
 
 var controls;
 

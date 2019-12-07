@@ -1,5 +1,5 @@
 
-import {util} from './util01.js'
+import {util} from 'localutil'
 
 var components
 var Container

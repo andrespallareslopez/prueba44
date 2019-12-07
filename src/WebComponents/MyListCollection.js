@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '/src/components/list/03List-collections.css'
+import 'css03listcollections'
 
 const MyListCollection = (props) => {
      

@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom'
 import jquery from './import-jquery.js'
 import {util} from 'localutil';
 import {components} from 'localcomponent';
-import {UXDataList} from './UXDataList.js'
-import {UXButtonScroll} from './UXButtonScroll.js'
+import {UXDataList} from 'localuxdatalist'
+import {UXButtonScroll} from 'localuxbuttonscroll'
 
 var controls;
 

@@ -8,7 +8,7 @@ import {MyComboSearch} from 'wccombosearch'
 import {MyInputNum} from 'wcinputnum'
 
 
-import '/src/components/forms/03form-fix-basic-01.css'
+import 'cssformfixbasic01'
 
 import {datos,mesas,categorias,articulos} from '/src/listInMemory.js'
 

@@ -5,7 +5,7 @@
 //import ReactDOM from '../../../node_modules/react-dom/umd/react-dom.production.min.js'
 import jquery from './import-jquery.js'
 
-var util
+var util;
 ;(function(ns,$,Handlebars){
     
     ns.mobilecheck = function() {
