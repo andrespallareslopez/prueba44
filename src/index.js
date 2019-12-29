@@ -6,7 +6,7 @@ import {Layout} from 'wclayout'
 
 
 //import $,{jQuery} from 'jquery'
-import jquery from './import-jquery.js'
+import jquery from 'localjquery'
 
 
 const cadenaweblatoutsstring = (

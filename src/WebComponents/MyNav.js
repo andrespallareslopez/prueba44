@@ -1,7 +1,8 @@
 import React from 'react'
 
 
-import '/src/components/buttons/03buttonmovile01.css';
+//import '/src/components/buttons/03buttonmovile01.css';
+import 'css03buttonmovile01';
 
 export const MyNav=() => {
 

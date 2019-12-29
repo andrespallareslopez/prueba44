@@ -6,7 +6,7 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _wclayout = require("wclayout");
 
-var _importJquery = _interopRequireDefault(require("./import-jquery.js"));
+var _localjquery = _interopRequireDefault(require("localjquery"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 

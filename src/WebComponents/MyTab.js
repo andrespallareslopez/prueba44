@@ -5,7 +5,7 @@ import {MySlidePanel} from 'wcslidepanel'
 import {MyForm} from 'wcform'
 import {datos,mesas,categorias,articulos} from '/src/listInMemory.js'
 
-import '/src/components/tabs/tabs01.css'
+import 'csstabs01'
 
 export const MyTab = (props)=>{
     var timer=setTimeout( () => {

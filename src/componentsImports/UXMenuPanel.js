@@ -1,4 +1,4 @@
-import jquery from './import-jquery.js'
+import jquery from 'localjquery'
 import {util} from 'localutil';
 import {components} from 'localcomponent';
 

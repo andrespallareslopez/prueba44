@@ -1,4 +1,4 @@
-import jquery from './import-jquery.js'
+import jquery from 'localjquery'
 import React from 'react'
 import ReactDOM from 'react-dom'
 

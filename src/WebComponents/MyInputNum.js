@@ -1,5 +1,5 @@
 import React from 'react'
-import Inputmask from 'inputmask'
+//import Inputmask from 'inputmask'
 
 export const MyInputNum = (props) => {
  
