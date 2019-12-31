@@ -1,5 +1,5 @@
-import React from 'react'
-import {Tab} from 'uxtab'
+import React,{useEffect} from 'react'
+import {UXTab} from 'uxtab'
 import {MyPanelScrollContent} from 'wcpanelscrollcontent'
 import {MySlidePanel} from 'wcslidepanel'
 import {MyForm} from 'wcform'
@@ -8,6 +8,11 @@ import {datos,mesas,categorias,articulos} from '/src/listInMemory.js'
 import 'csstabs01'
 
 export const MyTab = (props)=>{
+    useEffect(()=>{
+      console.log("Estoy dentro de useeffect");
+      var tabs=new UXTab();
+    },[])
+    /*
     var timer=setTimeout( () => {
         var tabs=new Tab() 
         //var $listCategorias=$('#panelCategorias')[0]
@@ -16,7 +21,7 @@ export const MyTab = (props)=>{
         //console.dir(categorias)
         
     }, 50 )
-
+    */
     return (
        <div> 
         <div className="tab-container" >
@@ -30,21 +35,20 @@ export const MyTab = (props)=>{
               
                     <ul className="tab-container-items">
                             <li className="tab-item" id="tabMesas" name-container="Mesas">
-                              <MyPanelScrollContent id="panelMesas" data={mesas}></MyPanelScrollContent>
+                               <MyPanelScrollContent id="panelMesas" data={mesas}></MyPanelScrollContent>
                             </li>
                             <li className="tab-item" id="tabCategorias" name-container="Categorias">
                                <MySlidePanel datalist={categorias} id="panelCategorias"></MySlidePanel>
                             </li>
                             <li className="tab-item" id="tabArticulos" name-container="Articulos">
-                            <MyPanelScrollContent id="panelArticulos" data={articulos}></MyPanelScrollContent>
+                               <MyPanelScrollContent id="panelArticulos" data={articulos}></MyPanelScrollContent>
                             </li>
                             <li className="tab-item" id="tabComandas" name-container="Comandas">
-                                 <MyForm id="form01"></MyForm>
+                               <MyForm id="form01"></MyForm>
                             </li>     
                           </ul>    
-            
-          </div>
-       </div>
+            </div>
+         </div>
        </div>
     )
 }

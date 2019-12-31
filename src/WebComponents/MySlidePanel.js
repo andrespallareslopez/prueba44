@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import {UXSlidePanels} from 'uxslidepanels'
 import {MySlidePanelDetail} from 'wcslidepaneldetail'
@@ -7,24 +7,26 @@ import 'css04slidecontainer'
 import 'css03listgroupbuttons'
 
 export const MySlidePanel = (props) => {
-   
-    
-
-    let timer=setTimeout( () => {
+    useEffect(()=>{
+      //Este componente si tiene que tener el setTimeout
+      let timer=setTimeout( () => {
         console.dir(props)
         let slidepaneldetail = new UXSlidePanels({
-            container:".slide-container .slide-items",
-            data: props.datalist,
-            textTemplate: MySlidePanelDetailRender
-        })
+          container:".slide-container .slide-items",
+          data: props.datalist,
+          textTemplate: MySlidePanelDetailRender
+        });
         //const sizes=slidepaneldetail.getSizes(props.datalist);
-        //console.dir(sizes)
-       
-      
+        //console.dir(sizes) 
         clearTimeout(timer)
         
     }, 750 )
+     
+    },[]);
     
+    /*
+    
+    */
     return (
       <div className="slide-container">
         <button className="slide-button left">

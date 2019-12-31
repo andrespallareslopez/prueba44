@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {UXPanelScroll} from 'uxpanelscroll'
 import {MyListGrpButtons} from 'wclistgrpbuttons'
 
@@ -7,17 +7,21 @@ import 'css03listgroupbuttons'
 
 export const  MyPanelScrollContent = (props) => {
    //console.dir(props)
-   var timer = setTimeout(()=>{
-     let id=props.id;
+   useEffect(()=>{
+    let id=props.id;
      
-     const panel = new UXPanelScroll({
-        id:id,
-        item:".list-grp-buttons .list-grp-content-top"
-     })
+    const panel = new UXPanelScroll({
+       id:id,
+       item:".list-grp-buttons .list-grp-content-top"
+    })
+   },[])
+   /*
+   var timer = setTimeout(()=>{
+   
      clearTimeout(timer)
       
    },50)
-   
+   */
     return (
         <div id={props.id}>
             <div  className="panel-scroll-01">

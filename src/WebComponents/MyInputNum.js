@@ -1,10 +1,11 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 //import Inputmask from 'inputmask'
 
 export const MyInputNum = (props) => {
  
     var timer = setTimeout(()=>{
-        let id=props.id;
+        
+       let id=props.id;
       
         let selectorInput=document.querySelector('#'+id+' .input');
         
@@ -30,6 +31,8 @@ export const MyInputNum = (props) => {
             selectorWarning.style.display='none';
         }
         Inputmask({ regex: "\\d*" }).mask(selectorInput);
+        
+
         clearTimeout(timer) 
       },50);
     return (

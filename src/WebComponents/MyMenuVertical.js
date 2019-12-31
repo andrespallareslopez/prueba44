@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import {UXScrollV} from 'uxscrollv'
 import {UXAccordeon} from 'uxaccordeon'
@@ -14,76 +14,81 @@ import 'css03listcollections';
 
 export const MyMenuVertical = (props) => {
     //console.dir(props);
+    useEffect(()=>{
+      var id=props.id
+      new UXScrollV({
+          id:id
+      });
+      
+      new UXAccordeon({
+      id:id,
+      onClickMenu:function(e){
+          //console.log("estoy en click menu")
+          e.preventDefault()
+          var id=$(e.target).data("panel-id")
+          var template;
+          switch(id){
+            case 'template01':
+               template=(props)=> (
+                 <MyPage01 id={props.id}></MyPage01>
+               )
+            break;
+            case 'template02':
+               template=(props)=> (
+                  <MyPage02 id={props.id}></MyPage02>
+               )
+            break;
+            case 'template03':
+                template=(props)=> (
+                  <MyPage03 id={props.id}></MyPage03>
+               )
+            break;
+            case 'template04':
+               template=(props)=>(
+                 <MyPageSearch id={props.id} ></MyPageSearch>
+               )
+            break;
+            case 'template05':
+               
+            break;
+            case 'template06':
+               
+            break;
+            case 'template07':
+               
+            break;
+            case 'template08':
+               
+            break;
+            case 'template09':
+               
+            break;
+            case 'template10':
+               
+            break;
+            case 'template11':
+               
+            break;
+            case 'template12':
+               
+            break;
+          }
+          new UXLoadPanel({
+            id:id,
+            textTemplate: template
+          });
+      }
+      });
+    },[]);
+    /*
     var timer=setTimeout(()=>{
-        var id=props.id
-        new UXScrollV({
-            id:id
-        })
-        
-        new UXAccordeon({
-        id:id,
-        onClickMenu:function(e){
-            console.log("estoy en click menu")
-            e.preventDefault()
-            var id=$(e.target).data("panel-id")
-            var template;
-            switch(id){
-              case 'template01':
-                 template=(props)=> (
-                   <MyPage01 id={props.id}></MyPage01>
-                 )
-              break;
-              case 'template02':
-                 template=(props)=> (
-                    <MyPage02 id={props.id}></MyPage02>
-                 )
-              break;
-              case 'template03':
-                  template=(props)=> (
-                    <MyPage03 id={props.id}></MyPage03>
-                 )
-              break;
-              case 'template04':
-                 template=(props)=>(
-                   <MyPageSearch id={props.id} ></MyPageSearch>
-                 )
-              break;
-              case 'template05':
-                 
-              break;
-              case 'template06':
-                 
-              break;
-              case 'template07':
-                 
-              break;
-              case 'template08':
-                 
-              break;
-              case 'template09':
-                 
-              break;
-              case 'template10':
-                 
-              break;
-              case 'template11':
-                 
-              break;
-              case 'template12':
-                 
-              break;
-            }
-            new UXLoadPanel({
-              id:id,
-              textTemplate: template
-            })
-        }
-        })
+      
         
         },50)
-        const divstyle={
+    */    
+    const divstyle={
           height:'100%'
-        }
+    }
     return (
   <div style={divstyle} id={props.id}>      
   <div className="menu-vertical01"  >

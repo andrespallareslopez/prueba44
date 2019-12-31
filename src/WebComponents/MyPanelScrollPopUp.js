@@ -1,17 +1,23 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {UXScrollPopUp} from 'uxscrollpopup'
 
 import 'css03menupopup01'
 import 'css04footermenu01'
 
 export const MyPanelScrollPopUp = (props) => {
-    console.log(props.id)
+    //console.log(props.id)
+    useEffect(()=>{
+        var scrollpopup= new UXScrollPopUp({
+            id: props.id  
+          });
+    },[]);
+    /*
     var timer = setTimeout( () => {
       var scrollpopup= new UXScrollPopUp({
         id: props.id  
       })
     },50)
-    
+    */
     return (
     <div id={props.id} >
         <button id="btn-footer-menu01" className="nav-mobile center-v push-float-right ripple" >

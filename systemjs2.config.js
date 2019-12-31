@@ -37,7 +37,7 @@ SystemJS.config({
         'wcpage03':'/src/lib/MyPage03.js',
         'wcpage02':'/src/lib/MyPage02.js',
         'wcpage01':'/src/lib/MyPage01.js',
-        'uxtab':'/src/componentsImports/componentstabcontainer.js',
+        'uxtab':'/src/componentsImports/UXTab.js',
         'uxkeyform':'/src/componentsImports/UXKeyform.js',
         'uxscrollv':'/src/componentsImports/UXScrollV.js',
         'uxaccordeon':'/src/componentsImports/UXAccordeon.js',

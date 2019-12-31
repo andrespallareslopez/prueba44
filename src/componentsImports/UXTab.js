@@ -6,7 +6,7 @@ import {components} from 'localcomponent';
 var controls;
 
 ;(function(ns){
-    ns.tab=(function(){
+    ns.UXTab=(function(){
         return function(options){
             this.init(options);
         };
@@ -40,7 +40,7 @@ var controls;
     };
      //****************************************************************
    
-    ns.tab.prototype.init=function(options){
+    ns.UXTab.prototype.init=function(options){
         var self=this;
         //console.log("estoy dentro de init en Tab")
         
@@ -127,8 +127,8 @@ var controls;
 })(controls=controls||{});
 
 
-var Tab=controls.tab;
-export {Tab}
+var UXTab=controls.UXTab;
+export {UXTab}
 
 if (!window.controls)
    window.controls={}
