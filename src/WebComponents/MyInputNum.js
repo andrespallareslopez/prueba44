@@ -1,40 +1,37 @@
 import React,{useEffect} from 'react'
+import IMask from 'imask'
 //import Inputmask from 'inputmask'
 
 export const MyInputNum = (props) => {
- 
-    var timer = setTimeout(()=>{
-        
-       let id=props.id;
+   useEffect(()=>{
+    let id=props.id;
       
-        let selectorInput=document.querySelector('#'+id+' .input');
-        
-         let selectorWarning = document.querySelector('#'+id+' .label-warning');
-         console.dir(selectorWarning);
-         if (selectorInput){
-            selectorInput.addEventListener('focus',function(e){
-                console.dir(e);
-            })
-            selectorInput.addEventListener('blur',function(e){
-                console.dir(e);
-                if (props.required){
-                    if (selectorInput.value){
-                        selectorWarning.style.display='none';
-                    }else{
-                        selectorWarning.style.display='block';
-                    }
+    let selectorInput=document.querySelector('#'+id+' .input');
+    
+     let selectorWarning = document.querySelector('#'+id+' .label-warning');
+     console.dir(selectorWarning);
+     if (selectorInput){
+        selectorInput.addEventListener('focus',function(e){
+            //console.dir(e);
+        })
+        selectorInput.addEventListener('blur',function(e){
+            //console.dir(e);
+            if (props.required){
+                if (selectorInput.value){
+                    selectorWarning.style.display='none';
+                }else{
+                    selectorWarning.style.display='block';
                 }
-         });            
-
-        }
-        if (selectorWarning){
-            selectorWarning.style.display='none';
-        }
-        Inputmask({ regex: "\\d*" }).mask(selectorInput);
-        
-
-        clearTimeout(timer) 
-      },50);
+            }
+        });            
+    }
+    if (selectorWarning){
+        selectorWarning.style.display='none';
+    }
+    Inputmask({ regex: "\\d*" }).mask(selectorInput);
+    
+   },[]);
+    
     return (
       <div id={props.id}>
         <div className="group group-block" >
@@ -52,7 +49,7 @@ export const MyInputNum = (props) => {
           </div>                                             
         </div>
       </div>
-
+    
     )
 }
 

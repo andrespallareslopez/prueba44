@@ -8,7 +8,7 @@
     "startwindow": "live-server --port=8083",
     "build:babel": "npx babel src/index.js -w -o src/index-bis.js",
     "build:babelcomponent": "npx babel src/WebComponents -w --out-dir src/lib",
-    "babel:ux":"npx babel src/componentsImports -w --out-dir src/componentsImports/lib",
+    "babel:ux": "npx babel src/componentsImports -w --out-dir src/componentsImports/lib",
     "build:sass": "sass -w src/components/**"
   },
   "author": "",
@@ -54,6 +54,7 @@
   "dependencies": {
     "cleave.js": "^1.5.3",
     "concurrently": "^4.1.2",
+    "imask": "^6.0.0",
     "inputmask": "^4.0.9",
     "jquery": "^1.12.1",
     "linq": "^3.2.1",

@@ -6,6 +6,7 @@ import {MyCalendar} from 'wccalendar'
 import {MyCombo} from 'wccombo'
 import {MyComboSearch} from 'wccombosearch'
 import {MyInputNum} from 'wcinputnum'
+import {MyInputDecimal} from 'wcinputdecimal'
 
 
 import 'cssformfixbasic01'
@@ -30,6 +31,8 @@ export const MyForm = (props) => {
           <MyCombo id="combo1" name="articulos"data={articulos} msgText="Introduce familia" nameField="descripcion" ></MyCombo>
           <MyComboSearch id="search01" name="categoria" data={datos} msgPlaceHolder="Introduce busqueda" nameField="description" ></MyComboSearch>
           <MyInputNum required id="num01" name="numero" msgText="Numero" msgWarning="Numero Obligatorio" msgPlaceHolder="Introduce numero"></MyInputNum>  
+          <MyInputDecimal id="decimal01" msgPlaceHolder="Decimal" />
+          
         </form>
     )
 }
