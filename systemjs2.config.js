@@ -53,7 +53,7 @@ SystemJS.config({
         'uxscrollpopup':'/src/componentsImports/UXScrollPopUp.js',
         'uxslidepanels':'/src/componentsImports/UXSlidePanels.js',
         'uxbuttonscroll':'/src/componentsImports/UXButtonScroll.js',
-        'uxsearchlist':'src/componentsImports/UXSearchList.js',
+        'uxsearchlist':'/src/componentsImports/UXSearchList.js',
         'uxdatalist':'/src/componentsImports/UXDataList.js',
         'uxdatepicker':'/src/componentsImports/UXDatePicker.js',
         'uxsearchpanel':'/src/componentsImports/UXSearchPanel.js',

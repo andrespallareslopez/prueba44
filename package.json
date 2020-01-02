@@ -9,7 +9,8 @@
     "build:babel": "npx babel src/index.js -w -o src/index-bis.js",
     "build:babelcomponent": "npx babel src/WebComponents -w --out-dir src/lib",
     "babel:ux": "npx babel src/componentsImports -w --out-dir src/componentsImports/lib",
-    "build:sass": "sass -w src/components/**"
+    "build:sass": "sass -w src/components/**",
+    "build:gulp": "npx gulp"
   },
   "author": "",
   "license": "ISC",

@@ -12,7 +12,7 @@ export const MyInput = (props) => {
         </div>
         <div className="label-input" >
           <span className="logo fa fa-tag fa-2x" ></span>
-          <input type="text" placeholder={props.msgPlaceHolder} className="input" />
+          <input type="text" name={props.name} placeholder={props.msgPlaceHolder} className="input" />
         </div>                                             
       </div>
     </div>

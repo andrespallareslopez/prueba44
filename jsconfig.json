@@ -1,0 +1,55 @@
+{
+    "compilerOptions": {
+        "moduleResolution":"node",
+        "target": "es6",
+        "jsx":"react",
+        "baseUrl": ".",
+        "paths":{
+        "wcinput":["src/WebComponents/MyInput.js"],
+        "wcinputnum":["src/WebComponents/MyInputNum.js"],
+        "wcinputdecimal":["src/WebComponents/MyInputDecimal.js"],
+        "wcinputmask":["src/WebComponents/MyInputMask.js"],
+        "wcinputdate":["src/WebComponents/MyInputDate.js"],
+        "wcinputdatetime":["src/WebComponents/MyInputDateTime.js"],
+        "wcinputcurrency":["src/WebComponents/MyInputCurrency.js"],
+        "wcinputcreditcard":["src/WebComponents/MyInputCreditCard.js"],
+        "wclayout":["src/WebComponents/Layout.js"],
+        "wctab":["src/WebComponents/MyTab.js"],
+        "wcmenuvertical":["src/WebComponents/MyMenuVertical.js"],
+        "wcnav":["src/WebComponents/MyNav.js"],
+        "wcform":["src/WebComponents/MyForm.js"],
+        "wcslidepanel":["src/WebComponents/MySlidePanel.js"],
+        "wcpanelscrollcontent":["src/WebComponents/MyPanelScrollContent.js"],
+        "wccombosearch":["src/WebComponents/MyComboSearch.js"],
+        "wccombo":["src/WebComponents/MyCombo.js"],
+        "wccalendar":["src/WebComponents/MyCalendar.js"],
+        "wcpanelscrollsearch":["src/WebComponents/MyPanelScrollSearch.js"],
+        "wcbuttonsearch":["src/WebComponents/MyButtonSearch.js"],
+        "wcpanelscrollpopup":["src/WebComponents/MyPanelScrollPopUp.js"],
+        "wcslidepaneldetail":["src/WebComponents/MySlidePanelDetail.js"],
+        "wclistgrpbuttons":["src/WebComponents/MyListGrpButtons.js"],
+        "wcpagesearch":["src/WebComponents/MyPageSearch.js"],
+        "wcpage03":["src/WebComponents/MyPage03.js"],
+        "wcpage02":["src/WebComponents/MyPage02.js"],
+        "wcpage01":["src/WebComponents/MyPage01.js"],
+        "uxtab":["src/componentsImports/UXTab.js"],
+        "uxkeyform":["src/componentsImports/UXKeyform.js"],
+        "uxscrollv":["src/componentsImports/UXScrollV.js"],
+        "uxaccordeon":["src/componentsImports/UXAccordeon.js"],
+        "uxloadpanel":["src/componentsImports/UXLoadPanel.js"],
+        "uxpanelscroll":["src/componentsImports/UXPanelScroll.js"],
+        "uxscrollpopup":["src/componentsImports/UXScrollPopUp.js"],
+        "uxslidepanels":["src/componentsImports/UXSlidePanels.js"],
+        "uxbuttonscroll":["src/componentsImports/UXButtonScroll.js"],
+        "uxsearchlist":["src/componentsImports/UXSearchList.js"],
+        "uxdatalist":["src/componentsImports/UXDataList.js"],
+        "uxdatepicker":["src/componentsImports/UXDatePicker.js"],
+        "uxsearchpanel":["src/componentsImports/UXSearchPanel.js"],
+        }
+    },
+    "typeAcquisition": {
+        "include": [
+        "node"
+        ]
+    }
+}

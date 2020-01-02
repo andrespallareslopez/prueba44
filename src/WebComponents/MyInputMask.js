@@ -1,16 +1,16 @@
-import React,{useEffect} from 'react'
-import IMask from 'imask'
+import React,{useEffect} from 'react';
+import IMask from 'imask';
 //import Inputmask from 'inputmask'
 
 export const MyInputMask = (props) => {
     
     useEffect(()=>{
-        let id=props.id;
-      
-        let selectorInput=document.querySelector('#'+id+' .input');
-        
+         let id=props.id;
+         console.log(id)
+         let selectorInput=document.querySelector('#'+id+' .input');
+         
          let selectorWarning = document.querySelector('#'+id+' .label-warning');
-         console.dir(selectorWarning);
+         //console.dir(selectorWarning);
          if (selectorInput){
             selectorInput.addEventListener('focus',function(e){
                 //console.dir(e);
@@ -30,8 +30,13 @@ export const MyInputMask = (props) => {
             selectorWarning.style.display='none';
         }
         //Inputmask({ regex: "\\d*" }).mask(selectorInput);
-        IMask(selectorInput,{mask:/\\d*/})
-    },[]);
+        IMask(selectorInput,{mask:props.mask,
+                             lazy:false
+                            })
+        //Informacion de como configurar IMask
+        /*https://imask.js.org/guide.html#getting-started*/
+
+    },[])
      
     return (
         <div id={props.id}>

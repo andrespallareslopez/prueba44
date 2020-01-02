@@ -59,12 +59,21 @@ var controls;
          Mousetrap(keyForm).bind("enter",function(e){
            console.log("enter")
            console.dir(e)
+           var currentElement=document.activeElement;
+            //console.dir(currentElement)
+            var nextObjeto = $('#'+self.options.id).find('.current-element').first().parent().next();
+            //console.dir(nextObjeto)
+            if (nextObjeto.length>0){
+                $('#'+self.options.id).find('.current-element').first().removeClass('current-element');
+                nextObjeto.find('.group.group-block').first().addClass('current-element');
+                nextObjeto.find('.group.group-block').first().find('input').first().focus();
+            }    
            e.cancelBubble=true;
            
            return false; //for preventing strange effects with calendar control with key enter
          });
          Mousetrap(keyForm).bind("down",function(e){
-            console.log("down")
+            //console.log("down")
             var currentElement=document.activeElement;
             //console.dir(currentElement)
             var nextObjeto = $('#'+self.options.id).find('.current-element').first().parent().next();
@@ -74,11 +83,11 @@ var controls;
                 nextObjeto.find('.group.group-block').first().addClass('current-element');
                 nextObjeto.find('.group.group-block').first().find('input').first().focus();
             }            
-           
+            
             
          });
          Mousetrap(keyForm).bind("up",function(e){
-            console.log("up")
+            //console.log("up")
             var currentElement=document.activeElement;
             //console.dir(currentElement)
             var prevObjeto = $('#'+self.options.id).find('.current-element').first().parent().prev();

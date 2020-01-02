@@ -9,7 +9,7 @@ export const MyInputNum = (props) => {
     let selectorInput=document.querySelector('#'+id+' .input');
     
      let selectorWarning = document.querySelector('#'+id+' .label-warning');
-     console.dir(selectorWarning);
+     //console.dir(selectorWarning);
      if (selectorInput){
         selectorInput.addEventListener('focus',function(e){
             //console.dir(e);
@@ -28,8 +28,8 @@ export const MyInputNum = (props) => {
     if (selectorWarning){
         selectorWarning.style.display='none';
     }
-    Inputmask({ regex: "\\d*" }).mask(selectorInput);
-    
+    //Inputmask({ regex: "\\d*" }).mask(selectorInput);
+  IMask(selectorInput,{mask:/^[0-9]*$/});
    },[]);
     
     return (
@@ -41,7 +41,7 @@ export const MyInputNum = (props) => {
           </div>
           <div className="label-input" >
             <span className="logo fa fa-tag fa-2x" ></span>
-            <input type="text" placeholder={props.msgPlaceHolder} className="input" />
+            <input type="text" name={props.name} placeholder={props.msgPlaceHolder} className="input" />
           </div>
           <div className="label-warning" >
             <span className="logo fa fa-warning fa-2x" ></span>
@@ -49,7 +49,6 @@ export const MyInputNum = (props) => {
           </div>                                             
         </div>
       </div>
-    
     )
 }
 
