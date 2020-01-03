@@ -57,6 +57,7 @@ SystemJS.config({
         'uxdatalist':'/src/componentsImports/UXDataList.js',
         'uxdatepicker':'/src/componentsImports/UXDatePicker.js',
         'uxsearchpanel':'/src/componentsImports/UXSearchPanel.js',
+        'uxvalidation':'/src/componentsImports/UXValidation.js',
         'localutil':'/src/componentsImports/util01.js',
         'localcomponent':'/src/componentsImports/components01.js',
         'localuxscroll':'/src/componentsImports/UXScroll.js',

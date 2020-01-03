@@ -45,6 +45,7 @@
         "uxdatalist":["src/componentsImports/UXDataList.js"],
         "uxdatepicker":["src/componentsImports/UXDatePicker.js"],
         "uxsearchpanel":["src/componentsImports/UXSearchPanel.js"],
+        "uxvalidation":["src/componentsImports/UXValidation.js"]
         }
     },
     "typeAcquisition": {

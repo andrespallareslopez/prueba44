@@ -1,9 +1,30 @@
 import React,{useEffect} from 'react'
 import IMask from 'imask'
 //import Inputmask from 'inputmask'
+import {UXValidation} from 'uxvalidation'
 
 export const MyInputDecimal = (props) => {
     useEffect(()=>{
+      new UXValidation(props,({selectorInput})=>{
+        //console.log("estoy dentro uxvalidation");
+        let scale=0;
+        if (props.scale)
+            scale=props.scale;
+   
+        IMask(selectorInput,{
+           mask: Number,  // enable number mask
+   
+           // other options are optional with defaults below
+           scale: scale,  // digits after point, 0 for integers
+           signed: false,  // disallow negative
+           thousandsSeparator: '',  // any single char
+           padFractionalZeros: true,  // if true, then pads zeros at end to the length of scale
+           normalizeZeros: true,  // appends or removes zeros at ends
+           radix: ',',  // fractional delimiter
+           mapToRadix: ['.']  // symbols to process as radix
+        });
+     });
+      /*
      let id=props.id;
        
      let selectorInput=document.querySelector('#'+id+' .input');
@@ -28,18 +49,10 @@ export const MyInputDecimal = (props) => {
      if (selectorWarning){
          selectorWarning.style.display='none';
      }
-     IMask(selectorInput,{
-        mask: Number,  // enable number mask
-
-        // other options are optional with defaults below
-        scale: 2,  // digits after point, 0 for integers
-        signed: false,  // disallow negative
-        thousandsSeparator: '',  // any single char
-        padFractionalZeros: true,  // if true, then pads zeros at end to the length of scale
-        normalizeZeros: true,  // appends or removes zeros at ends
-        radix: ',',  // fractional delimiter
-        mapToRadix: ['.']  // symbols to process as radix
-     });
+     */
+     /*
+    
+     */
      //Inputmask("decimal").mask(selectorInput);
      //Inputmask({mask:"999[.99]",greedy:false}).mask(selectorInput);
     },[]);

@@ -11,6 +11,7 @@ import {MyInputDecimal} from 'wcinputdecimal'
 import {MyInputDate} from 'wcinputdate'
 import {MyInputDateTime} from 'wcinputdatetime'
 import {MyInputMask} from 'wcinputmask'
+import {MyInputCurrency} from 'wcinputcurrency'
 
 import 'cssformfixbasic01'
 
@@ -34,11 +35,14 @@ export const MyForm = (props) => {
           <MyCombo id="combo1" name="articulos"data={articulos} msgText="Introduce familia" nameField="descripcion" ></MyCombo>
           <MyComboSearch id="search01" name="categoria" data={datos} msgPlaceHolder="Introduce busqueda" nameField="description" ></MyComboSearch>
           <MyInputNum required id="num01" name="numero" msgText="Numero" msgWarning="Numero Obligatorio" msgPlaceHolder="Introduce numero"></MyInputNum>  
-          <MyInputDecimal id="decimal01" msgPlaceHolder="Decimal" />
+          <MyInputDecimal id="decimal01" msgPlaceHolder="Decimal" scale="4" />
           <MyInputDate id="date01" msgPlaceHolder="Fecha" />
           <MyInputDateTime id="datetime01" msgPlaceHolder="fecha tiempo" />
           <MyInputMask id="mask01" mask="(000) 00 00 00" />
           <MyInputMask id="numero01" mask={Number} />
+          <MyInputCurrency id="currency01" scale="3" />
+          <MyInputCurrency id="currency02" />
+           
         </form>
     );
 }

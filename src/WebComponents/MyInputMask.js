@@ -2,9 +2,16 @@ import React,{useEffect} from 'react';
 import IMask from 'imask';
 //import Inputmask from 'inputmask'
 
+import {UXValidation} from 'uxvalidation'
+
 export const MyInputMask = (props) => {
     
     useEffect(()=>{
+      new UXValidation(props,({selectorInput})=>{
+        //console.log("estoy dentro uxvalidation");
+        IMask(selectorInput,{mask:props.mask,lazy:false})
+     });
+         /*
          let id=props.id;
          console.log(id)
          let selectorInput=document.querySelector('#'+id+' .input');
@@ -29,10 +36,9 @@ export const MyInputMask = (props) => {
         if (selectorWarning){
             selectorWarning.style.display='none';
         }
+        */
         //Inputmask({ regex: "\\d*" }).mask(selectorInput);
-        IMask(selectorInput,{mask:props.mask,
-                             lazy:false
-                            })
+        //IMask(selectorInput,{mask:props.mask,lazy:false})
         //Informacion de como configurar IMask
         /*https://imask.js.org/guide.html#getting-started*/
 

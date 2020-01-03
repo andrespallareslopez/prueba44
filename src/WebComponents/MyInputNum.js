@@ -1,35 +1,16 @@
 import React,{useEffect} from 'react'
 import IMask from 'imask'
 //import Inputmask from 'inputmask'
+import {UXValidation} from 'uxvalidation'
 
 export const MyInputNum = (props) => {
    useEffect(()=>{
-    let id=props.id;
-      
-    let selectorInput=document.querySelector('#'+id+' .input');
-    
-     let selectorWarning = document.querySelector('#'+id+' .label-warning');
-     //console.dir(selectorWarning);
-     if (selectorInput){
-        selectorInput.addEventListener('focus',function(e){
-            //console.dir(e);
-        })
-        selectorInput.addEventListener('blur',function(e){
-            //console.dir(e);
-            if (props.required){
-                if (selectorInput.value){
-                    selectorWarning.style.display='none';
-                }else{
-                    selectorWarning.style.display='block';
-                }
-            }
-        });            
-    }
-    if (selectorWarning){
-        selectorWarning.style.display='none';
-    }
+    new UXValidation(props,({selectorInput})=>{
+       //console.log("estoy dentro uxvalidation");
+       IMask(selectorInput,{mask:/^[0-9]*$/});
+    });
     //Inputmask({ regex: "\\d*" }).mask(selectorInput);
-  IMask(selectorInput,{mask:/^[0-9]*$/});
+  //IMask(selectorInput,{mask:/^[0-9]*$/});
    },[]);
     
     return (
