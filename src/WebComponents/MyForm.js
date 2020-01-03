@@ -12,6 +12,7 @@ import {MyInputDate} from 'wcinputdate'
 import {MyInputDateTime} from 'wcinputdatetime'
 import {MyInputMask} from 'wcinputmask'
 import {MyInputCurrency} from 'wcinputcurrency'
+import {MyInputCreditCard} from 'wcinputcreditcard'
 
 import 'cssformfixbasic01'
 
@@ -42,7 +43,7 @@ export const MyForm = (props) => {
           <MyInputMask id="numero01" mask={Number} />
           <MyInputCurrency id="currency01" scale="3" />
           <MyInputCurrency id="currency02" />
-           
+          <MyInputCreditCard id="credit01" /> 
         </form>
     );
 }

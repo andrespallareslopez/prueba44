@@ -7,36 +7,11 @@ import {UXValidation} from 'uxvalidation'
 export const MyInputMask = (props) => {
     
     useEffect(()=>{
-      new UXValidation(props,({selectorInput})=>{
+     new UXValidation(props,({selectorInput})=>{
         //console.log("estoy dentro uxvalidation");
         IMask(selectorInput,{mask:props.mask,lazy:false})
      });
-         /*
-         let id=props.id;
-         console.log(id)
-         let selectorInput=document.querySelector('#'+id+' .input');
-         
-         let selectorWarning = document.querySelector('#'+id+' .label-warning');
-         //console.dir(selectorWarning);
-         if (selectorInput){
-            selectorInput.addEventListener('focus',function(e){
-                //console.dir(e);
-            })
-            selectorInput.addEventListener('blur',function(e){
-                //console.dir(e);
-                if (props.required){
-                    if (selectorInput.value){
-                        selectorWarning.style.display='none';
-                    }else{
-                        selectorWarning.style.display='block';
-                    }
-                }
-            });            
-        }
-        if (selectorWarning){
-            selectorWarning.style.display='none';
-        }
-        */
+        
         //Inputmask({ regex: "\\d*" }).mask(selectorInput);
         //IMask(selectorInput,{mask:props.mask,lazy:false})
         //Informacion de como configurar IMask

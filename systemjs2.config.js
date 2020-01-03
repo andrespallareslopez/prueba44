@@ -10,6 +10,7 @@ SystemJS.config({
         jquery:"node_modules/jquery/dist/jquery.min.js",
         react:'node_modules/react/umd/react.development.js',
         imask:'node_modules/imask/dist/imask.js',
+        cleave: 'node_modules/cleave.js/dist/cleave.js',
         'react-dom':'node_modules/react-dom/umd/react-dom.development.js',
         css: 'node_modules/systemjs-plugin-css/css.js',
         text: 'src/text.js',

@@ -6,34 +6,12 @@ import {UXValidation} from 'uxvalidation'
 export const MyInputCurrency = (props) => {
     
     useEffect(()=>{
-         let id=props.id;
-         console.log(id)
-         let selectorInput=document.querySelector('#'+id+' .input');
-         
-         let selectorWarning = document.querySelector('#'+id+' .label-warning');
-         //console.dir(selectorWarning);
-         if (selectorInput){
-            selectorInput.addEventListener('focus',function(e){
-                //console.dir(e);
-            })
-            selectorInput.addEventListener('blur',function(e){
-                //console.dir(e);
-                if (props.required){
-                    if (selectorInput.value){
-                        selectorWarning.style.display='none';
-                    }else{
-                        selectorWarning.style.display='block';
-                    }
-                }
-            });            
-        }
-        if (selectorWarning){
-            selectorWarning.style.display='none';
-        }
+      new UXValidation(props,({selectorInput})=>{
+        //console.log("estoy dentro uxvalidation");
         let scale=0;
         if (props.scale)
             scale=props.scale;
-
+        
         IMask(selectorInput, {
             mask: Number,  // enable number mask
           
@@ -50,6 +28,9 @@ export const MyInputCurrency = (props) => {
             //min: -10000,
             //max: 10000
           });
+     });
+
+       
         //Inputmask({ regex: "\\d*" }).mask(selectorInput);
         /*
         IMask(selectorInput,{mask:props.mask,
