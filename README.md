@@ -1,8 +1,8 @@
 # Todo-do List
 
 - [*] MyInputNum
-- [ ] MyInputMask
-- [ ] MyInputCreditCard
+- [*] MyInputMask
+- [*] MyInputCreditCard
 - [ ] MyTable
 - [ ] MyPageSearch
 - [ ] MyPagePagination

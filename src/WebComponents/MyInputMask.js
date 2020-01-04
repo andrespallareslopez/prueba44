@@ -3,6 +3,7 @@ import IMask from 'imask';
 //import Inputmask from 'inputmask'
 
 import {UXValidation} from 'uxvalidation'
+import {MyInputTemplate} from 'wcinputtemplate'
 
 export const MyInputMask = (props) => {
     
@@ -20,6 +21,9 @@ export const MyInputMask = (props) => {
     },[])
      
     return (
+      <MyInputTemplate {...props} />
+
+      /*
         <div id={props.id}>
           <div className="group group-block" >
             <div className="label-help">
@@ -36,6 +40,6 @@ export const MyInputMask = (props) => {
             </div>                                             
           </div>
         </div>
-      
+        */
       )
 }

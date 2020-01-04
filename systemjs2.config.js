@@ -28,6 +28,7 @@ SystemJS.config({
         'wccombosearch':'/src/lib/MyComboSearch.js',
         'wccombo':'/src/lib/MyCombo.js',
         'wccalendar':'/src/lib/MyCalendar.js',
+        'wcinputtemplate':'/src/lib/MyInputTemplate.js',
         'wcinputnum':'/src/lib/MyInputNum.js',
         'wcinput':'/src/lib/MyInput.js',
         'wcinputdecimal':'/src/lib/MyInputDecimal.js',

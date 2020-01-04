@@ -2,6 +2,7 @@ import React,{useEffect} from 'react'
 import IMask from 'imask'
 //import Inputmask from 'inputmask'
 import {UXValidation} from 'uxvalidation'
+import {MyInputTemplate} from 'wcinputtemplate'
 
 export const MyInputDateTime = (props) => {
    useEffect(()=>{
@@ -61,6 +62,8 @@ export const MyInputDateTime = (props) => {
    },[]);
     
     return (
+       <MyInputTemplate {...props} />
+      /*
       <div id={props.id}>
         <div className="group group-block" >
           <div className="label-help">
@@ -77,5 +80,6 @@ export const MyInputDateTime = (props) => {
           </div>                                             
         </div>
       </div>
+      */
     )
 }

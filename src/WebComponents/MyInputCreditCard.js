@@ -1,8 +1,9 @@
 import React,{useEffect} from 'react';
-import IMask from 'imask';
+//import IMask from 'imask';
 import Cleave from 'cleave';
 //import Inputmask from 'inputmask'
 import {UXValidation} from 'uxvalidation'
+import {MyInputTemplate} from 'wcinputtemplate'
 
 export const MyInputCreditCard = (props) => {
      
@@ -30,6 +31,8 @@ export const MyInputCreditCard = (props) => {
     },[])
      
     return (
+        <MyInputTemplate {...props} />
+        /*
         <div id={props.id}>
           <div className="group group-block" >
             <div className="label-help">
@@ -46,5 +49,6 @@ export const MyInputCreditCard = (props) => {
             </div>                                             
           </div>
         </div>
+        */
     )
 }

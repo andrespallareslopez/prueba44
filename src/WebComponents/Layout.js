@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {MyNav} from 'wcnav'
 import {MyMenuVertical} from 'wcmenuvertical'
 import {MyTab} from 'wctab'

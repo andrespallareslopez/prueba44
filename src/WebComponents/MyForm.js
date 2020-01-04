@@ -43,7 +43,8 @@ export const MyForm = (props) => {
           <MyInputMask id="numero01" mask={Number} />
           <MyInputCurrency id="currency01" scale="3" />
           <MyInputCurrency id="currency02" />
-          <MyInputCreditCard id="credit01" /> 
+          <MyInputCreditCard id="credit01" />
+           
         </form>
     );
 }

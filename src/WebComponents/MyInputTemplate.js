@@ -1,24 +1,14 @@
 import React,{useEffect} from 'react'
-import IMask from 'imask'
-//import Inputmask from 'inputmask'
+
 import {UXValidation} from 'uxvalidation'
-import {MyInputTemplate} from 'wcinputtemplate'
 
-export const MyInputNum = (props) => {
-   useEffect(()=>{
-    new UXValidation(props,({selectorInput})=>{
-       //console.log("estoy dentro uxvalidation");
-       IMask(selectorInput,{mask:/^[0-9]*$/});
-    });
-    //Inputmask({ regex: "\\d*" }).mask(selectorInput);
-  //IMask(selectorInput,{mask:/^[0-9]*$/});
-   },[]);
-    
+export const MyInputTemplate = (props) => {
+    useEffect(()=>{
+        //new UXValidation(props);
+        //console.log(props.msgWarning)
+    },[]);
     return (
-      <MyInputTemplate {...props} />
-
-      /*
-      <div id={props.id}>
+    <div id={props.id}>
         <div className="group group-block" >
           <div className="label-help">
             <span className="logo fa fa-question-circle fa-2x"></span>
@@ -28,13 +18,11 @@ export const MyInputNum = (props) => {
             <span className="logo fa fa-tag fa-2x" ></span>
             <input type="text" name={props.name} placeholder={props.msgPlaceHolder} className="input" />
           </div>
-          <div className="label-warning" >
+          <div className="label-warning" style={(props.msgWarning===undefined)? {display:'none'}: {display:'block'}}>
             <span className="logo fa fa-warning fa-2x" ></span>
             <span className="text">{props.msgWarning}</span>
           </div>                                             
         </div>
       </div>
-      */
     )
 }
-

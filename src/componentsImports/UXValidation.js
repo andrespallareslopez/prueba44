@@ -46,9 +46,9 @@ var controls;
             msgText,
             msgWarning,
             msgPlaceHolder,
-            required
+        
          } = options;
-         //console.log(id)
+         //console.dir(options)
          let selectorInput=document.querySelector('#'+id+' .input');
     
          let selectorWarning = document.querySelector('#'+id+' .label-warning');
@@ -59,19 +59,22 @@ var controls;
         })
         selectorInput.addEventListener('blur',function(e){
             //console.dir(e);
-            if (required){
+             if (msgWarning){
                 if (selectorInput.value){
                     selectorWarning.style.display='none';
                 }else{
+                 
                     selectorWarning.style.display='block';
+                 
                 }
-            }
+             }
         });            
     }
     if (selectorWarning){
         selectorWarning.style.display='none';
     }
-    fn({selectorInput,selectorWarning})
+    if (fn)
+      fn({selectorInput,selectorWarning})
   }
 
 })(controls=controls||{},components,jQuery)

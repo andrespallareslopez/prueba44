@@ -1,9 +1,15 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+
+import {MyInputTemplate} from 'wcinputtemplate'
 
 export const MyInput = (props) => {
-    
+    useEffect(()=>{
+
+    },[]);
     
     return (
+      <MyInputTemplate {...props} />
+    /*  
     <div id={props.id}>
       <div className="group group-block" >
         <div className="label-help">
@@ -16,5 +22,6 @@ export const MyInput = (props) => {
         </div>                                             
       </div>
     </div>
+    */
     )
 }

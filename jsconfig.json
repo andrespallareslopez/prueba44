@@ -45,7 +45,8 @@
         "uxdatalist":["src/componentsImports/UXDataList.js"],
         "uxdatepicker":["src/componentsImports/UXDatePicker.js"],
         "uxsearchpanel":["src/componentsImports/UXSearchPanel.js"],
-        "uxvalidation":["src/componentsImports/UXValidation.js"]
+        "uxvalidation":["src/componentsImports/UXValidation.js"],
+        "cleave": ["node_modules/cleave.js/dist/cleave.js"]
         }
     },
     "typeAcquisition": {

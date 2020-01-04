@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {UXPanelScroll} from 'uxpanelscroll'
 
 import 'css04panelscroll02'

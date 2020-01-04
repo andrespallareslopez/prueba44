@@ -9,15 +9,14 @@ var controls;
 ;(function(ns,components,$){
     "use strict";
     ns.UXKeyForm=(function(){
-        return function(options){
+       return function(options){
                        
          var params=[].slice.call(arguments);
          if (params.length>0){
-             
              this.initControl.apply(this,params);
          }
-         
-        }
+
+       }
     })();
     
     ns.UXKeyForm.prototype=new components.container();
@@ -25,28 +24,16 @@ var controls;
     ns.UXKeyForm.prototype.initControl=function(options){
         ;(function(options){
             options.id=options.id||undefined
-            //options.containerComponent=options.containerComponent||".form-search"
-            //options.data=options.data||undefined
-            
-            //options.inputText=options.inputText||'#input-search' 
-            //options.onButtonClick=options.onButtonClick||undefined
-            //options.onClose=options.onClose||undefined
-            //options.onSearch=options.onSearch||undefined,
-            //options.onSearchBefore=options.onSearchBefore||undefined
+           
         })(options)
         
         var id=options.id;
-        
-        //this.$inputText=undefined
-        
-        this.init(options)
-        //this.initEventInputSearch(options)
          
+        this.init(options)
          
         if (!this.options.textTemplate && this.initevent){
             this.initevent(options)
         } 
-          
         
      }
      ns.UXKeyForm.prototype.initEventInputSearch = function(){
@@ -57,8 +44,8 @@ var controls;
          findFirstElement.apply(self,[]);
          
          Mousetrap(keyForm).bind("enter",function(e){
-           console.log("enter")
-           console.dir(e)
+           //console.log("enter")
+           //console.dir(e)
            var currentElement=document.activeElement;
             //console.dir(currentElement)
             var nextObjeto = $('#'+self.options.id).find('.current-element').first().parent().next();
@@ -82,9 +69,7 @@ var controls;
                 $('#'+self.options.id).find('.current-element').first().removeClass('current-element');
                 nextObjeto.find('.group.group-block').first().addClass('current-element');
                 nextObjeto.find('.group.group-block').first().find('input').first().focus();
-            }            
-            
-            
+            }               
          });
          Mousetrap(keyForm).bind("up",function(e){
             //console.log("up")
@@ -97,11 +82,7 @@ var controls;
                 prevObjeto.find('.group.group-block').first().addClass('current-element');
                 prevObjeto.find('.group.group-block').first().find('input').first().focus();
             }
-            
-            
-            
          });
-          
      }
      ns.UXKeyForm.prototype.initevent = function(options){
         this.initEventInputSearch()

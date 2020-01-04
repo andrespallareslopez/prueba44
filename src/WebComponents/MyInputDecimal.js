@@ -2,6 +2,7 @@ import React,{useEffect} from 'react'
 import IMask from 'imask'
 //import Inputmask from 'inputmask'
 import {UXValidation} from 'uxvalidation'
+import {MyInputTemplate} from 'wcinputtemplate'
 
 export const MyInputDecimal = (props) => {
     useEffect(()=>{
@@ -24,40 +25,15 @@ export const MyInputDecimal = (props) => {
            mapToRadix: ['.']  // symbols to process as radix
         });
      });
-      /*
-     let id=props.id;
-       
-     let selectorInput=document.querySelector('#'+id+' .input');
      
-      let selectorWarning = document.querySelector('#'+id+' .label-warning');
-      console.dir(selectorWarning);
-      if (selectorInput){
-         selectorInput.addEventListener('focus',function(e){
-             //console.dir(e);
-         })
-         selectorInput.addEventListener('blur',function(e){
-             //console.dir(e);
-             if (props.required){
-                 if (selectorInput.value){
-                     selectorWarning.style.display='none';
-                 }else{
-                     selectorWarning.style.display='block';
-                 }
-             }
-         });            
-     }
-     if (selectorWarning){
-         selectorWarning.style.display='none';
-     }
-     */
-     /*
-    
-     */
+     
      //Inputmask("decimal").mask(selectorInput);
      //Inputmask({mask:"999[.99]",greedy:false}).mask(selectorInput);
     },[]);
      
      return (
+       <MyInputTemplate {...props} />
+       /*
        <div id={props.id}>
          <div className="group group-block" >
            <div className="label-help">
@@ -74,6 +50,6 @@ export const MyInputDecimal = (props) => {
            </div>                                             
          </div>
        </div>
-     
+     */
      )
  }

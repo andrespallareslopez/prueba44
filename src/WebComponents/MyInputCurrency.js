@@ -2,6 +2,7 @@ import React,{useEffect} from 'react';
 import IMask from 'imask';
 //import Inputmask from 'inputmask'
 import {UXValidation} from 'uxvalidation'
+import {MyInputTemplate} from 'wcinputtemplate'
 
 export const MyInputCurrency = (props) => {
     
@@ -43,6 +44,8 @@ export const MyInputCurrency = (props) => {
     },[])
      
     return (
+      <MyInputTemplate {...props} />
+      /*
         <div id={props.id}>
           <div className="group group-block" >
             <div className="label-help">
@@ -59,6 +62,6 @@ export const MyInputCurrency = (props) => {
             </div>                                             
           </div>
         </div>
-      
+      */
       )
 }
