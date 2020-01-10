@@ -1,13 +1,20 @@
 # Todo-do List
 
-- [*] MyInputNum
-- [*] MyInputMask
-- [*] MyInputCreditCard
-- [ ] MyTable
-- [ ] MyPageSearch
-- [ ] MyPagePagination
-- [ ] MyPageForm
-- [*] MyButtonSearch
+- [x] MyInputNum
+- [x] MyInputMask
+- [x] MyInputCreditCard
+- [ ] MyTable 
+- [ ] MyPageSearch 
+- [ ] MyPagePagination 
+- [ ] MyPageForm 
+- [x] MyButtonSearch 
+- [ ] MyKeyBoardNum 
+- [ ] MyPaginationNum 
+- [ ] MyPaginationBoard 
+- [ ] MySlide 
+- [ ] MySlice 
+- [ ] MyInputemail
+- [ ] MyInputTime
 
 ***Dealing with callbacks as props in React***
 

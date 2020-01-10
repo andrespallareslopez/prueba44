@@ -27,7 +27,7 @@ var controls;
            
         })(options)
         
-        var id=options.id;
+        //var id=options.id;
          
         this.init(options)
          
@@ -38,15 +38,29 @@ var controls;
      }
      ns.UXKeyForm.prototype.initEventInputSearch = function(){
          var self=this;
+         self.currentInput = undefined;
          //console.dir(Mousetrap);
          var keyForm = document.getElementById(self.options.id);
          //console.dir(keyForm);
          findFirstElement.apply(self,[]);
          
+         document.querySelectorAll('#'+self.options.id + ' input').forEach((el,i)=>{
+             //console.dir(el.id);
+             //obtener el foco en el formulario
+             document.getElementById(el.id).addEventListener('focus',function(e){
+                //console.dir(e.target.id);
+                //self.currentInputId=e.target.id;
+                $('#' + self.options.id).find('.current-element').first().removeClass('current-element');
+                $('#' + e.target.id).parent().parent().addClass('current-element');
+                //console.dir(self.currentInput);
+                
+             }) 
+         })
+         
          Mousetrap(keyForm).bind("enter",function(e){
            //console.log("enter")
            //console.dir(e)
-           var currentElement=document.activeElement;
+           var currentElement= document.activeElement;
             //console.dir(currentElement)
             var nextObjeto = $('#'+self.options.id).find('.current-element').first().parent().next();
             //console.dir(nextObjeto)
@@ -61,15 +75,18 @@ var controls;
          });
          Mousetrap(keyForm).bind("down",function(e){
             //console.log("down")
-            var currentElement=document.activeElement;
-            //console.dir(currentElement)
+            //console.log(self.currentImputId);
+            var currentElement=  document.activeElement;
+            console.dir(currentElement)
             var nextObjeto = $('#'+self.options.id).find('.current-element').first().parent().next();
             //console.dir(nextObjeto)
             if (nextObjeto.length>0){
                 $('#'+self.options.id).find('.current-element').first().removeClass('current-element');
                 nextObjeto.find('.group.group-block').first().addClass('current-element');
                 nextObjeto.find('.group.group-block').first().find('input').first().focus();
-            }               
+            }
+            
+
          });
          Mousetrap(keyForm).bind("up",function(e){
             //console.log("up")

@@ -90,7 +90,7 @@ export const MyCombo = (props) => {
                 <div className="label-input">
                 <span className="logo fa fa-tag fa-2x"></span>
                 <input
-                    id="combotxt"
+                    id={props.id+"combotxt"}
                     type="text"
                     placeholder=""
                     className="input medium"

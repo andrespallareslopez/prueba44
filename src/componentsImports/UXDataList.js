@@ -33,11 +33,11 @@ var controls;
             options.containerComponent=options.containerComponent||".panel-datalist"
             options.data=options.data||undefined
             options.nameblock=options.nameblock||'.group-block'
-            options.namefield=options.namefield||'#combotxt'
+            options.namefield=options.namefield||'#'+options.id+'combotxt'
             options.namedatalist=options.namedatalist||'.datalist'
             options.namebutton=options.namebutton||'#search'
             options.namebuttonclose=options.namebuttonclose||'#btn-slide-close01'
-            options.inputText=options.inputText||'#combotxt' 
+            options.inputText=options.inputText||'#'+options.id+'combotxt' 
             options.onButtonClick=options.onButtonClick||undefined
             options.onClose=options.onClose||undefined
         })(options)

@@ -1,5 +1,4 @@
 import jquery from 'localjquery'
-
 import {util} from 'localutil';
 
 

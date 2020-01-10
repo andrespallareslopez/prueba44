@@ -12,16 +12,7 @@ export const MyTab = (props)=>{
       console.log("Estoy dentro de useeffect");
       var tabs=new UXTab();
     },[])
-    /*
-    var timer=setTimeout( () => {
-        var tabs=new Tab() 
-        //var $listCategorias=$('#panelCategorias')[0]
-        //console.dir($listCategorias)
-        //$listCategorias.datalist=categorias
-        //console.dir(categorias)
-        
-    }, 50 )
-    */
+    
     return (
        <div> 
         <div className="tab-container" >

@@ -48,7 +48,7 @@ export const MyComboSearch = (props) => {
             
            textTemplate: cadenadatalist,
             onButtonClick:function(options){
-                console.log('estoy en onbuttonclick search01')
+                //console.log('estoy en onbuttonclick search01')
                 
                 datalist.renderTemplate(props)
                   

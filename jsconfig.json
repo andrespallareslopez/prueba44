@@ -33,6 +33,7 @@
         "wcpage02":["src/WebComponents/MyPage02.js"],
         "wcpage01":["src/WebComponents/MyPage01.js"],
         "uxtab":["src/componentsImports/UXTab.js"],
+        "uxtable":["src/componentsImports/UXTable.js"],
         "uxkeyform":["src/componentsImports/UXKeyform.js"],
         "uxscrollv":["src/componentsImports/UXScrollV.js"],
         "uxaccordeon":["src/componentsImports/UXAccordeon.js"],
@@ -46,12 +47,16 @@
         "uxdatepicker":["src/componentsImports/UXDatePicker.js"],
         "uxsearchpanel":["src/componentsImports/UXSearchPanel.js"],
         "uxvalidation":["src/componentsImports/UXValidation.js"],
-        "cleave": ["node_modules/cleave.js/dist/cleave.js"]
+        "uxtable":["src/componentsImports/UXTable.js"],
+        "cleave": ["node_modules/cleave.js/dist/cleave.js"],
+        "wcinputtemplate":["src/WebComponents/MyInputTemplate.js"]
         }
     },
+    /*
     "typeAcquisition": {
         "include": [
         "node"
         ]
     }
+    */
 }

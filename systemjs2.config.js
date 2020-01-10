@@ -8,6 +8,7 @@ SystemJS.config({
         },
     map:{
         jquery:"node_modules/jquery/dist/jquery.min.js",
+        'jquerymask':'/src/componentsImports/jquery.inputmask.js',
         react:'node_modules/react/umd/react.development.js',
         imask:'node_modules/imask/dist/imask.js',
         cleave: 'node_modules/cleave.js/dist/cleave.js',
@@ -20,6 +21,7 @@ SystemJS.config({
         'inputmask.dependencyLibs':'inputmask.dependencyLib.js',
         'wclayout':'src/lib/Layout.js',
         'wctab':'/src/lib/MyTab.js',
+        'wctable':'/src/lib/MyTable.js',
         'wcmenuvertical':'/src/lib/MyMenuVertical.js',
         'wcnav':'/src/lib/MyNav.js',
         'wcform':'/src/lib/MyForm.js',
@@ -42,11 +44,13 @@ SystemJS.config({
         'wcpanelscrollpopup':'/src/lib/MyPanelScrollPopUp.js',
         'wcslidepaneldetail':'/src/lib/MySlidePanelDetail.js',
         'wclistgrpbuttons':'/src/lib/MyListGrpButtons.js',
+        'wcpagetable':'/src/lib/MyPageTable.js',
         'wcpagesearch':'/src/lib/MyPageSearch.js',
         'wcpage03':'/src/lib/MyPage03.js',
         'wcpage02':'/src/lib/MyPage02.js',
         'wcpage01':'/src/lib/MyPage01.js',
         'uxtab':'/src/componentsImports/UXTab.js',
+        'uxtable':'/src/componentsImports/UXTable.js',
         'uxkeyform':'/src/componentsImports/UXKeyform.js',
         'uxscrollv':'/src/componentsImports/UXScrollV.js',
         'uxaccordeon':'/src/componentsImports/UXAccordeon.js',
@@ -84,7 +88,8 @@ SystemJS.config({
         'css03menupopup01':'/src/components/footer/03Menu-popup01.css',
         'css04footermenu01':'/src/components/footer/04footermenu01.css',
         'css04slidecontainer':'/src/components/slides/04slide-container.css',
-        'csstabs01':'/src/components/tabs/tabs01.css'
+        'csstabs01':'/src/components/tabs/tabs01.css',
+        'csstable':'/src/components/Table/table01.css'
         
     },
     packages:{

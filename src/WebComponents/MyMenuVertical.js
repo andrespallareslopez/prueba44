@@ -8,6 +8,7 @@ import {MyPage01} from 'wcpage01'
 import {MyPage02} from 'wcpage02'
 import {MyPage03} from 'wcpage03'
 import {MyPageSearch} from 'wcpagesearch'
+import {MyPageTable} from 'wcpagetable'
 
 import 'css03menuvertical01';
 import 'css03listcollections';
@@ -49,7 +50,9 @@ export const MyMenuVertical = (props) => {
                )
             break;
             case 'template05':
-               
+               template = (props) => (
+                 <MyPageTable id={props.id}></MyPageTable>
+               )
             break;
             case 'template06':
                
