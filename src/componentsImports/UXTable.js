@@ -2,7 +2,7 @@ import jquery from 'localjquery';
 //import * as inputmask1 from 'jquerymask';
 import {util} from 'localutil';
 import {components} from 'localcomponent';
-
+import IMask from 'imask'
 
 import Inputmask from 'inputmask'
 
@@ -1533,17 +1533,66 @@ var controls;
                  .mask(document.querySelector("#"+idInput));
                break;
                case "date":
-                 Inputmask({alias:self.alias,placeholder:"_"})
+                var momentFormat = 'DD/MM/YYYY';
+                selectorInput=document.querySelector("#"+idInput);
+
+                var momentMask = IMask(selectorInput, {
+                  mask: Date,
+                  pattern: momentFormat,
+                  lazy: false,
+                  min: new Date(1900, 0, 1),
+                  max: new Date(9999, 0, 1),
+                
+                  format: function (date) {
+                    return moment(date).format(momentFormat);
+                  },
+                  parse: function (str) {
+                    return moment(str, momentFormat);
+                  },
+                
+                  blocks: {
+                    YYYY: {
+                      mask: IMask.MaskedRange,
+                      from: 1900,
+                      to: 9999
+                    },
+                    MM: {
+                      mask: IMask.MaskedRange,
+                      from: 1,
+                      to: 12
+                    },
+                    DD: {
+                      mask: IMask.MaskedRange,
+                      from: 1,
+                      to: 31
+                    },
+                    HH: {
+                      mask: IMask.MaskedRange,
+                      from: 0,
+                      to: 23
+                    },
+                    mm: {
+                      mask: IMask.MaskedRange,
+                      from: 0,
+                      to: 59
+                    }
+                  }
+                });
+               
+                 /* 
+                 Inputmask({alias:'datetime',inputFormat:'dd/mm/yyyy'})
                  .mask(document.querySelector("#"+idInput));
+                 */
                break;
                case "email":
                  console.log("Estou en email:"+ self.alias)
                  console.dir($("#"+idInput))
                  console.dir($)
                  //$("#"+idInput).inputmask({alias:self.alias})
+               
                  
                  Inputmask({
-                  mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
+                  mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}][_*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
                   greedy: false
                  })
                  .mask(document.querySelector("#"+idInput));

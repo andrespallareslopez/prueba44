@@ -44,6 +44,7 @@ SystemJS.config({
         'wcpanelscrollpopup':'/src/lib/MyPanelScrollPopUp.js',
         'wcslidepaneldetail':'/src/lib/MySlidePanelDetail.js',
         'wclistgrpbuttons':'/src/lib/MyListGrpButtons.js',
+        'wcpageform':'/src/lib/MyPageForm.js',
         'wcpagetable':'/src/lib/MyPageTable.js',
         'wcpagesearch':'/src/lib/MyPageSearch.js',
         'wcpage03':'/src/lib/MyPage03.js',

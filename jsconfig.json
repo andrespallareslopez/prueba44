@@ -47,7 +47,6 @@
         "uxdatepicker":["src/componentsImports/UXDatePicker.js"],
         "uxsearchpanel":["src/componentsImports/UXSearchPanel.js"],
         "uxvalidation":["src/componentsImports/UXValidation.js"],
-        "uxtable":["src/componentsImports/UXTable.js"],
         "cleave": ["node_modules/cleave.js/dist/cleave.js"],
         "wcinputtemplate":["src/WebComponents/MyInputTemplate.js"]
         }

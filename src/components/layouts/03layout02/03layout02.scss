@@ -62,7 +62,7 @@ input:focus{
                 margin-left: #{$asidew};
                 width:calc(100% - #{$asidew})
             }
-            z-index:50;
+            /*z-index:50;*/
          }
         .main-body{
             display:block;
@@ -344,7 +344,7 @@ input:focus{
             display:none;
         }
         #btn-toggle-sign-in{
-            z-index:50;
+            /*z-index:50;*/
         }
         #frmsearch01{
             z-index:50;

@@ -35,7 +35,7 @@ export const MyTab = (props)=>{
                                <MyPanelScrollContent id="panelArticulos" data={articulos}></MyPanelScrollContent>
                             </li>
                             <li className="tab-item" id="tabComandas" name-container="Comandas">
-                               <MyForm id="form01"></MyForm>
+                               
                             </li>     
                           </ul>    
             </div>

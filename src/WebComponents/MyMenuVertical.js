@@ -9,6 +9,7 @@ import {MyPage02} from 'wcpage02'
 import {MyPage03} from 'wcpage03'
 import {MyPageSearch} from 'wcpagesearch'
 import {MyPageTable} from 'wcpagetable'
+import {MyPageForm} from 'wcpageform'
 
 import 'css03menuvertical01';
 import 'css03listcollections';
@@ -55,7 +56,9 @@ export const MyMenuVertical = (props) => {
                )
             break;
             case 'template06':
-               
+               template=(props) =>(
+                 <MyPageForm id={props.id} ></MyPageForm>
+               )
             break;
             case 'template07':
                
@@ -83,12 +86,7 @@ export const MyMenuVertical = (props) => {
       }
       });
     },[]);
-    /*
-    var timer=setTimeout(()=>{
-      
-        
-        },50)
-    */    
+   
     const divstyle={
           height:'100%'
     }

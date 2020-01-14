@@ -4,22 +4,22 @@ import {UXPanelScroll} from 'uxpanelscroll'
 import 'css04panelscroll02'
 
 export const MyPanelScrollSearch = (props) => {
-    var timer = setTimeout(()=>{
-        let id=props.id;
-        /*
+
+    useEffect(()=>{
+         /*
         const panel = new UXPanelScroll({
            id:id,
            item:".list-grp-buttons .list-grp-content-top"
         })
         */
-        clearTimeout(timer) 
-    },50)
+    },[]) 
+   
     return (
       <div id={props.id} > 
       <div className="panel-scroll-01">
         <div className="panel-scroll-content">
           <div className="panel-scroll-item">
-            
+            {props.children}
           </div>
         </div>
         <button id="btn-slide-up" className="slide-button-panel top">

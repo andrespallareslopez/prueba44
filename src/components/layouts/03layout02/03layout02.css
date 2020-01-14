@@ -65,7 +65,7 @@ input:focus {
   overflow-y: auto;
   opacity: 0;
   transition: all 0.3s ease-in-out;
-  z-index: 50; }
+  /*z-index:50;*/ }
   @media screen and (min-width: 768px) {
     .lyt03layout02 .childLayout {
       margin-left: 200px;
@@ -272,7 +272,7 @@ input:focus {
   .lyt03layout02 #btn-toggle-right {
     display: none; }
   .lyt03layout02 #btn-toggle-sign-in {
-    z-index: 50; }
+    /*z-index:50;*/ }
   .lyt03layout02 #frmsearch01 {
     z-index: 50; }
   .lyt03layout02 .logo {
