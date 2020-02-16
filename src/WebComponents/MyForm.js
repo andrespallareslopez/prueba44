@@ -16,7 +16,7 @@ import {MyInputCreditCard} from 'wcinputcreditcard'
 
 import 'cssformfixbasic01'
 
-import {datos,mesas,categorias,articulos} from '/src/listInMemory.js'
+import {datos,mesas,categorias,articulos} from 'listdatos'
 
 
 export const MyForm = (props) => {

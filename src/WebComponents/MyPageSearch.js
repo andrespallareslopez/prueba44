@@ -3,7 +3,7 @@ import {MyPanelScrollPopUp} from 'wcpanelscrollpopup'
 import {MyButtonSearch} from 'wcbuttonsearch'
 import {MyPanelScrollSearch} from 'wcpanelscrollsearch'
 
-import {datos,mesas,categorias,articulos} from '/src/listInMemory.js'
+import {datos,mesas,categorias,articulos} from 'listdatos'
 
 export const MyPageSearch = (props) => {
     

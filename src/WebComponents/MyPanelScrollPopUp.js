@@ -11,13 +11,7 @@ export const MyPanelScrollPopUp = (props) => {
             id: props.id  
           });
     },[]);
-    /*
-    var timer = setTimeout( () => {
-      var scrollpopup= new UXScrollPopUp({
-        id: props.id  
-      })
-    },50)
-    */
+   
     return (
     <div id={props.id} >
         <button id="btn-footer-menu01" className="nav-mobile center-v push-float-right ripple" >

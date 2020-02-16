@@ -5,6 +5,7 @@
         "jsx":"react",
         "baseUrl": ".",
         "paths":{
+        "listdatos":["src/ListInMemory.js"],
         "wcinput":["src/WebComponents/MyInput.js"],
         "wcinputnum":["src/WebComponents/MyInputNum.js"],
         "wcinputdecimal":["src/WebComponents/MyInputDecimal.js"],

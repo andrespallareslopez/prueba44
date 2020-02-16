@@ -7,19 +7,23 @@ SystemJS.config({
         modularRuntime: true
         },
     map:{
-        jquery:"node_modules/jquery/dist/jquery.min.js",
+        jquery:"/dist/jquery.min.js",
+        'jquerymask':'/src/componentsImports/jquery.inputmask.js',
         //react:'dist/bundle.vendorext.js',
-        react:'node_modules/react/umd/react.development.js',
-        'react-dom':'node_modules/react-dom/umd/react-dom.development.js',
-        css: 'node_modules/systemjs-plugin-css/css.js',
-        text: 'src/text.js',
+        react:'/dist/react.development.js',
+        'react-dom':'/dist/react-dom.development.js',
+        imask:'node_modules/imask/dist/imask.js',
+        cleave: 'node_modules/cleave.js/dist/cleave.js',
+        css: '/dist/css.js',
+        text: '/dist/text.js',
         'plugin-babel': 'node_modules/systemjs-plugin-babel/plugin-babel.js',
-        'systemjs-babel-build':'node_modules/systemjs-plugin-babel/systemjs-babel-browser.js',
-        
+        'systemjs-babel-build':'/dist/systemjs-babel-browser.js',
+        'inputmask':'node_modules/inputmask/dist/inputmask/inputmask.js',
+        'inputmask.dependencyLibs':'inputmask.dependencyLib.js',
         //'inputmask':'node_modules/inputmask/dist/inputmask/inputmask.js',
         //'inputmask':'dist/bundle.vendorext.js',
         //'inputmask.dependencyLibs':'inputmask.dependencyLib.js',
-        
+        'listdatos':'/dist/ListInMemory.js',
         'wclayout':'/dist/bundle.wc.js',
         'wctab':'/dist/bundle.wc.js',
         'wcmenuvertical':'/dist/bundle.wc.js',
@@ -106,5 +110,5 @@ SystemJS.config({
     ,transpiler: 'plugin-babel'
     })
     
-    SystemJS.import('src/index-bis.js');
+    SystemJS.import('dist/index-bis.js');
     //SystemJS.import('dist/bundle.wc.js');

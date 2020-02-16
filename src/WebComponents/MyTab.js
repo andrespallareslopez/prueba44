@@ -3,7 +3,7 @@ import {UXTab} from 'uxtab'
 import {MyPanelScrollContent} from 'wcpanelscrollcontent'
 import {MySlidePanel} from 'wcslidepanel'
 import {MyForm} from 'wcform'
-import {datos,mesas,categorias,articulos} from '/src/listInMemory.js'
+import {datos,mesas,categorias,articulos} from 'listdatos'
 
 import 'csstabs01'
 
