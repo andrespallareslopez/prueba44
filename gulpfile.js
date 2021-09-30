@@ -1,6 +1,6 @@
 var gulp=require("gulp");
 const { series , parallel } = require('gulp');
-const terser = require('gulp-terser');
+
 var clean=require("gulp-clean");
 var concat=require("gulp-concat");
 var rename=require("gulp-rename");
@@ -103,8 +103,7 @@ function concatwc(){
     .pipe(gulp.dest("dist/"));
 }
 function concatux(){
-    //utilizamos terser() para hacer los mismo que uglify() pero para
-    //para ES6+ porque uglify() esta preparado con ES5 con babel.
+   
    return gulp.src(filejs)
    .pipe(concat('bundle.ux.js'))
    .pipe(uglify())
