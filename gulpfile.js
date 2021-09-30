@@ -19,7 +19,7 @@ const basenode="node_modules/";
 const basecssloader = "src/components/loaders/";
 
 const filejs = [
-   basejs + 'componentstabcontainer.js',
+   //basejs + 'componentstabcontainer.js',
    basejs + 'UXKeyform.js',
    basejs + 'UXScrollV.js',
    basejs + 'UXAccordeon.js',
