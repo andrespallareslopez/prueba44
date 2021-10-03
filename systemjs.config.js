@@ -32,6 +32,13 @@ SystemJS.config({
         'wcslidepanel':'/dist/bundle.wc.js',
         'wcpanelscrollcontent':'/dist/bundle.wc.js',
         'wcinputnum':'/dist/bundle.wc.js',
+        'wcinputdecimal':'/dist/bundle.wc.js',
+        'wcinputmask':'/dist/bundle.wc.js',
+        'wcinputcurrency':'/dist/bundle.wc.js',
+        'wcinputcreditcard':'/dist/bundle.wc.js',
+        'wcinputdatetime':'/dist/bundle.wc.js',
+        'wcinputdate':'/dist/bundle.wc.js',
+        'wcinputtemplate':'/dist/bundle.wc.js',
         'wccombosearch':'/dist/bundle.wc.js',
         'wccombo':'/dist/bundle.wc.js',
         'wccalendar':'/dist/bundle.wc.js',
@@ -45,6 +52,10 @@ SystemJS.config({
         'wcpage03':'/dist/bundle.wc.js',
         'wcpage02':'/dist/bundle.wc.js',
         'wcpage01':'/dist/bundle.wc.js',
+        'wcpagetable':'/dist/bundle.wc.js',
+        'wcpageform':'/dist/bundle.wc.js',
+        'wcpagetable':'/dist/bundle.wc.js',
+        'wctable':'/dist/bundle.wc.js',
         'uxtab':'/dist/bundle.ux.js',
         'uxkeyform':'/dist/bundle.ux.js',
         'uxscrollv':'/dist/bundle.ux.js',
@@ -58,6 +69,8 @@ SystemJS.config({
         'uxdatalist':'/dist/bundle.ux.js',
         'uxdatepicker':'/dist/bundle.ux.js',
         'uxsearchpanel':'/dist/bundle.ux.js',
+        'uxvalidation':'/dist/bundle.ux.js',
+        'uxtable':'/dist/bundle.ux.js',
         //'localutil':'/src/componentsImports/lib/util01.js',
         'localutil':'/dist/bundle.base.js',
         //'localcomponent':'/src/componentsImports/lib/components01.js',
@@ -90,7 +103,8 @@ SystemJS.config({
         'css03menupopup01':'/dist/bundle.css',
         'css04footermenu01':'/dist/bundle.css',
         'css04slidecontainer':'/dist/bundle.css',
-        'csstabs01':'/dist/bundle.css'
+        'csstabs01':'/dist/bundle.css',
+        'csstable':'/dist/bundle.css'
         
         
     },
@@ -110,5 +124,5 @@ SystemJS.config({
     ,transpiler: 'plugin-babel'
     })
     
-    SystemJS.import('dist/index-bis.js');
+    SystemJS.import('src/index-bis.js');
     //SystemJS.import('dist/bundle.wc.js');

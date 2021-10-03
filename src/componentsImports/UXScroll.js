@@ -199,6 +199,7 @@ var controls;
                    });
                    
                    if (util.is_touch_device()){
+                     /*
                        if ("Hammer" in window){
                        
                        //console.log("hay Hammer");
@@ -215,7 +216,7 @@ var controls;
                        });
                        
                       }
-                      
+                      */
                    }else{
                      btn.on("mousedown",function(event){
                        console.log("estoy en mousedown");

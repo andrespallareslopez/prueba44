@@ -10,15 +10,16 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     
     <title>Testing react</title>
-    
+    <!--
     <link rel="stylesheet" href="node_modules/components-font-awesome/css/font-awesome.min.css" type="text/css" > 
     <link rel="stylesheet" href="src/components/loaders/loaders02/04loader-progress-01.css" type="text/css" >
     <link rel="stylesheet" href="src/components/loaders/loaders01/04logospinners.css" type="text/css" >
     <link rel="stylesheet" href="src/components/loaders/loaders03/spinner.css" type="text/css" >
     <link rel="stylesheet" href="src/components/loaders/loaders04/spinner.css" type="text/css" >
     <link rel="stylesheet" href="src/components/loaders/loaders05/spinner.css" type="text/css" >
+    -->
     <!--<link href="dist/minify/bundlecss.css" rel="stylesheet" type="text/css" >-->
-   
+    <link href="dist/bundle.cssloader.css" rel="stylesheet" type="text/css" >
 </head>
 <body>
     <div id="container" class="container lyt03layout02"  >
@@ -106,7 +107,7 @@
        </div>
        
     </div>
-    
+    <!--
     <script src="node_modules/moment/moment.js" ></script>
     <script src="node_modules/pikaday/pikaday.js" ></script>
     <script src="node_modules/tether/dist/js/tether.js" ></script>
@@ -115,5 +116,11 @@
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     
     <script src="dist/bundle.js" ></script>
+    -->
+    <script src='dist/bundle.vendorext.js' ></script>
+
+
+    <script src="dist/system.src.js"></script>
+    <script src="./systemjs.config.js" ></script>
 </body>
 </html>

@@ -20,6 +20,7 @@ const basecssloader = "src/components/loaders/";
 
 const filejs = [
    //basejs + 'componentstabcontainer.js',
+   basejs + 'UXScroll.js',
    basejs + 'UXKeyform.js',
    basejs + 'UXScrollV.js',
    basejs + 'UXAccordeon.js',
@@ -35,7 +36,8 @@ const filejs = [
    //basejs + 'util01.js',
    
    //basejs + 'components01.js',
-   basejs + 'UXScroll.js'
+   
+   basejs + 'UXTab.js'
 ];
 
 const filevendorexternal = [
@@ -92,7 +94,7 @@ const filejsbase=[
     'src/componentsImports/lib/utilContainer.js',
     'src/componentsImports/lib/UXScroll.js',
     'src/componentsImports/lib/UXDataList.js',
-    'src/componentsImports/lib/UXButtonScroll.js'
+    //'src/componentsImports/lib/UXButtonScroll.js'
     
 ]
 

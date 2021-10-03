@@ -80,41 +80,7 @@ var controls;
                        var options = {
                           preventDefault: true
                        };
-                       var mt=new Hammer(this,options);
-                       //mt.get("pan").set({direccion:Hammer.DIRECTION_ALL});
-                       //mt.get("swipe").set({direction:Hammer.DIRECTION_ALL})
-                       /*
-                       mt.on("panleft",function(ev){
-                          console.log("estoy en left");
-                           //var index=event.data.index;
-                           ii=index;
-                           atras();
-                       });
-                       mt.on("panright",function(ev){
-                          console.log("estoy en right");
-                            //var index=event.data.index;
-                           ii=index;
-                          avance();
-                       });
-                       */
-                       mt.on("swipeleft",function(event){
-                           console.log("drag left");
-                           ii=index;
-                           atras();
-                       });
-                       mt.on("swiperight",function(event){
-                           console.log("drag right");
-                           ii=index;
-                           avance(); 
-                       });
-                       /*
-                       mt.on("panup",function(event){
-                           console.log("pan up");
-                       });
-                       */
-                       mt.on("panend",function(){
-                           console.log("pan end");
-                       });
+                     
                    });
             //})
         }
