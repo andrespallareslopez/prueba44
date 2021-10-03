@@ -41,6 +41,7 @@ const filejs = [
 ];
 
 const filevendorexternal = [
+   
     basenode + 'moment/moment.js',
     basenode + 'pikaday/pikaday.js',
     basenode + 'tether/dist/js/tether.js',
@@ -88,16 +89,39 @@ const filecssbundle=[
 ]
 
 const filejsbase=[
+    'src/css-bis.js',
+    'src/cleave-bis.js',
     'src/componentsImports/lib/util01.js',
     'src/componentsImports/lib/components01.js',
     //'src/componentsImports/lib/import-jquery.js',
     'src/componentsImports/lib/utilContainer.js',
     'src/componentsImports/lib/UXScroll.js',
-    'src/componentsImports/lib/UXDataList.js',
+    'src/componentsImports/lib/UXDataList.js'
+    
     //'src/componentsImports/lib/UXButtonScroll.js'
     
 ]
+const filejsreact=[
+    'src/react.development.js',
+    //'src/react-dom.development.js',
+    //'src/imask.js'
 
+]
+const filejsreactdom=[
+    'src/react-dom.development.js'
+]
+function concatreactmin(){
+    return gulp.src(filejsreact)
+    .pipe(concat('bundle.react.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/'));
+}
+function concatreactdommin(){
+    return gulp.src(filejsreactdom)
+    .pipe(concat('bundle.react-dom.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/'));
+}
 function concatwc(){
     return gulp.src(["src/lib/*.js"])
     .pipe(concat("bundle.wc.js"))
@@ -137,6 +161,6 @@ function minifycssbundle(){
 }
 
 
-exports.default = series(concatwc,concatux,concatvendorexternal,minifycssloader,minifycssbundle,concatbase);
+exports.default = series(concatwc,concatux,concatvendorexternal,minifycssloader,minifycssbundle,concatbase,concatreactmin,concatreactdommin);
 
 //exports.default = concatux;
